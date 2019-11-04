@@ -1,3 +1,22 @@
 body {
   background-color: black;
 }
+
+#about-page {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#about-page h1 {
+  margin-top: 5vh;
+}
+
+#about-page img {
+  margin-top: 5vh;
+  width: 10vw;
+}
+
+#about-page p {
+  margin-top: 5vh;
+  padding: 0 30%;
+}
