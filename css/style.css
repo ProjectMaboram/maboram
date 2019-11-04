@@ -7,19 +7,44 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#about-page .header {
+  position: relative;
+  background: teal;
+  height: 10vh;
+}
+
+#about-page .header>img {
+  position: absolute;
+  left: 2vw;
+  height: 75%;
+}
+
+#about-page .nav {
+  background: green;
+  height: 5vh;
+}
+
 #about-page h1 {
-  margin-top: 5vh;
   text-align: center;
 }
 
-#about-page img {
+#about-page .image>img {
   margin-top: 5vh;
   width: 10vw;
 }
 
-#about-page p {
+#about-page .description {
+  height: 50vh;
+}
+
+#about-page .description>p {
   margin-top: 5vh;
   padding: 0 30%;
+}
+
+#about-page .footer {
+    background: darkgoldenrod;
+    height: 5vh;
 }
 
 #design-page {
