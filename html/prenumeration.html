@@ -4,9 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- jQuery and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS and JS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Prenumeration</title>
   </head>
   <body>
-    Hej hopp....
+    <main class="container">
+      <form>
+        <fieldset class="form-group">
+          <section class="form-row justify-content-center">
+            <legend>Välj ditt tema</legend>
+            <section class="form-check form-check-inline flex-column">
+              <label for="t1" class="form-check-label">
+                <img src="http://placehold.it/100x100/b0f/fff&text=Tema 1" />
+              </label>
+              <input
+                type="radio"
+                id="t1"
+                name="theme"
+                required
+                class="form-check-input"
+              />
+            </section>
+            <section class="form-check form-check-inline flex-column">
+              <label for="t2" class="form-check-label">
+                <img src="http://placehold.it/100x100/b0f/fff&text=Tema 2" />
+              </label>
+              <input
+                type="radio"
+                id="t2"
+                name="theme"
+                required
+                class="form-check-input"
+              />
+            </section>
+            <section class="form-check form-check-inline flex-column">
+              <label for="t3" class="form-check-label">
+                <img src="http://placehold.it/100x100/b0f/fff&text=Tema 3" />
+              </label>
+              <input
+                type="radio"
+                id="t3"
+                name="theme"
+                required
+                class="form-check-input"
+              />
+            </section>
+          </section>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <section class="form-row justify-content-center">
+            <legend>Välj form på ramen</legend>
+            <section class="form-check form-check-inline flex-column">
+              <label for="s1" class="form-check-label">
+                <img src="http://placehold.it/100x100/b0f/fff&text=Form 1" />
+              </label>
+              <input
+                type="radio"
+                id="s1"
+                name="theme"
+                required
+                class="form-check-input"
+              />
+            </section>
+            <section class="form-check form-check-inline flex-column">
+              <label for="s2" class="form-check-label">
+                <img src="http://placehold.it/100x100/b0f/fff&text=Form 2" />
+              </label>
+              <input
+                type="radio"
+                id="s2"
+                name="theme"
+                required
+                class="form-check-input"
+              />
+            </section>
+            <section class="form-check form-check-inline flex-column">
+              <label for="s3" class="form-check-label">
+                <img src="http://placehold.it/100x100/b0f/fff&text=Form 3" />
+              </label>
+              <input
+                type="radio"
+                id="s3"
+                name="theme"
+                required
+                class="form-check-input"
+              />
+            </section>
+          </section>
+        </fieldset>
+
+        <section class="form-row justify-content-end">
+          <button id="next">Nästa!</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
