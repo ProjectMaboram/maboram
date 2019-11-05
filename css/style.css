@@ -1,3 +1,93 @@
 body {
   background-color: black;
 }
+
+#about-page {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#about-page .header {
+  position: relative;
+  background: teal;
+  height: 10vh;
+}
+
+#about-page .header>img {
+  position: absolute;
+  left: 2vw;
+  height: 75%;
+}
+
+#about-page .nav {
+  background: green;
+  height: 5vh;
+}
+
+#about-page h1 {
+  text-align: center;
+}
+
+#about-page .image>img {
+  margin-top: 5vh;
+  width: 10vw;
+}
+
+#about-page .description {
+  height: 50vh;
+}
+
+#about-page .description>p {
+  margin-top: 5vh;
+  padding: 0 30%;
+}
+
+#about-page .footer {
+    background: darkgoldenrod;
+    height: 5vh;
+}
+
+#design-page {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#design-page .header {
+  position: relative;
+  background: teal;
+  height: 10vh;
+}
+
+#design-page .header>img {
+  position: absolute;
+  left: 2vw;
+  height: 75%;
+}
+
+#design-page .nav {
+  background: green;
+  height: 5vh;
+}
+
+#design-page .content {
+  border:2px solid crimson;
+  height: 80vh;
+}
+
+#design-page .footer {
+  background: darkgoldenrod;
+  height: 5vh;
+}
+
+#design-page h1 { 
+  text-align: center;
+}
+
+#design-page .instructions>p {
+  padding: 0 5%;
+}
+
+#design-page .instructions>button {
+  margin: 0 5%;
+  width: 20%;
+}
