@@ -6,6 +6,22 @@ body {
   z-index: 100;
 }
 
+.header {
+  position: relative;
+  background: teal;
+  height: 10vh;
+  margin-top: 7.5vh;
+}
+
+.header>h1 {
+  text-align: center;
+}
+
+.footer {
+  background: darkgoldenrod;
+  height: 5vh;
+}
+
 #about-page {
   position: relative;
   color: white;
@@ -13,25 +29,10 @@ body {
   min-height: 100vh;
 }
 
-#about-page .header {
-  position: relative;
-  background: teal;
-  height: 10vh;
-}
-
 #about-page .header>img {
   position: absolute;
   left: 2vw;
   height: 75%;
-}
-
-#about-page .nav {
-  background: green;
-  height: 5vh;
-}
-
-#about-page h1 {
-  text-align: center;
 }
 
 #about-page .image>img {
@@ -50,13 +51,6 @@ body {
   
 }
 
-#about-page .footer {
-    background: darkgoldenrod;
-    height: 5vh;
-    position: absolute;
-    bottom:0;
-}
-
 #design-page {
   position: relative;
   color: white;
@@ -64,21 +58,10 @@ body {
   min-height: 100vh;
 }
 
-#design-page .header {
-  position: relative;
-  background: teal;
-  height: 10vh;
-}
-
 #design-page .header>img {
   position: absolute;
   left: 2vw;
   height: 75%;
-}
-
-#design-page .nav {
-  background: green;
-  height: 5vh;
 }
 
 #design-page .content-row{
@@ -88,13 +71,6 @@ body {
 #design-page .content {
   height: 100%;
   /*border:2px solid blue;*/
-}
-
-#design-page .footer {
-  background: darkgoldenrod;
-  height: 5vh;
-  position: absolute;
-  bottom: 0;
 }
 
 #design-page h1 { 
@@ -108,4 +84,25 @@ body {
 #design-page .instructions>button {
   margin: 0 5%;
   width: 20%;
+}
+
+#design-page .shape {
+  border: 2px solid blue;
+  height: 100%;
+}
+
+#design-page .shape>*>* {
+  margin: 10% 0;
+}
+
+#design-page .option>label>img {
+  width: 50%;
+}
+
+#design-page .option {
+border: 2px solid blue;
+}
+
+label {
+  border: 2px solid green;
 }
