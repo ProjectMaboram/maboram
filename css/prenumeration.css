@@ -1,1 +1,16 @@
+* {
+  box-sizing: border-box;
+}
 
+input[type="radio"] {
+  margin-top: 5px !important;
+}
+
+fieldset {
+  width: 50%;
+  border: 1px solid black;
+}
+
+legend {
+  padding: 2vh 2vh;
+}
