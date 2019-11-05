@@ -1,10 +1,16 @@
 body {
-  background-color: black;
+  background-color: crimson !important;
+}
+
+.navbar {
+  z-index: 100;
 }
 
 #about-page {
+  position: relative;
   color: white;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 #about-page .header {
@@ -35,21 +41,27 @@ body {
 
 #about-page .description {
   height: 50vh;
+  /*border: 2px solid blue;*/
 }
 
 #about-page .description>p {
   margin-top: 5vh;
   padding: 0 30%;
+  
 }
 
 #about-page .footer {
     background: darkgoldenrod;
     height: 5vh;
+    position: absolute;
+    bottom:0;
 }
 
 #design-page {
+  position: relative;
   color: white;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 #design-page .header {
@@ -69,14 +81,20 @@ body {
   height: 5vh;
 }
 
+#design-page .content-row{
+  height: 77.5vh;
+}
+
 #design-page .content {
-  border:2px solid crimson;
-  height: 80vh;
+  height: 100%;
+  /*border:2px solid blue;*/
 }
 
 #design-page .footer {
   background: darkgoldenrod;
   height: 5vh;
+  position: absolute;
+  bottom: 0;
 }
 
 #design-page h1 { 
