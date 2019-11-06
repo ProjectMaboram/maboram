@@ -1,0 +1,42 @@
+.contact-form {
+	padding: 8px;
+	color: black;
+	height: 100vh;
+}
+
+.contact-form section {
+	margin: 10px 0;
+	position: relative;
+}
+.contact-form label {
+	transition: top 200ms ease-out, font-size 200ms, opacity 200ms;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	cursor: text;
+	user-select: none;
+}
+
+.contact-form input:not(:placeholder-shown) + label {
+	opacity: 0.8;
+	top: -8px;
+	font-size: 10px;
+}
+
+.contact-form input:placeholder-shown {
+	user-select: none;
+}
+
+.contact-form input {
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
