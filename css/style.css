@@ -7,7 +7,7 @@ h1 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 7px;
-  color: white;
+  color: rgb(82, 60, 6);
   font-family: "Parisienne", cursive;
 }
 
@@ -19,7 +19,8 @@ h1 {
 
 .navbar {
   z-index: 100;
-  background-color: darkgrey;
+  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
+  color: black;
 }
 
 .header {
@@ -34,6 +35,14 @@ h1 {
 }
 
 .footer {
-  background: rgb(73, 71, 71);
+  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
   height: 5vh;
+  
+}
+a{
+  color: black;
+}
+button {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
