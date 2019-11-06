@@ -1,69 +1,152 @@
 body {
-  background-color: whitesmoke;
+	font-family: 'Handlee', cursive;
+	background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
 }
-.h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 30px;
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 7px;
+	color: white;
+	font-family: 'Parisienne', cursive;
+}
+h2 {
+	margin-top: 20px;
 }
 .contact-form {
-  padding: 8px; 
-  color: black; 
+	padding: 8px;
+	color: black;
+	height: 100vh;
 }
 
 .contact-form section {
-  margin: 10px 0;
-  position: relative;
+	margin: 10px 0;
+	position: relative;
 }
 .contact-form label {
-  transition: top 200ms ease-out, font-size 200ms, opacity 200ms;
-  opacity: 0.5;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  cursor: text;
-  user-select: none;
+	transition: top 200ms ease-out, font-size 200ms, opacity 200ms;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	cursor: text;
+	user-select: none;
 }
 
 .contact-form input:not(:placeholder-shown) + label {
-  opacity: 0.8;
-  top: -8px;
-  font-size: 10px;
+	opacity: 0.8;
+	top: -8px;
+	font-size: 10px;
 }
 
 .contact-form input:placeholder-shown {
-  user-select: none;
+	user-select: none;
 }
 
 .contact-form input {
-  color: inherit;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid white;
-  outline: none;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+	-webkit-appearance: none;
+	margin: 0;
 }
 .form-row {
-  display: grid;
-  justify-content: center;
+	display: grid;
+	justify-content: center;
+}
+.logo {
+	max-height: 90px;
+	max-width: 90px;
+	object-fit: cover;
+}
+#about-page {
+	color: white;
 }
 
+#about-page .header {
+	position: relative;
+	height: 10vh;
+}
 
-@media (max-width: 575.98px) {}
+#about-page .header > img {
+	position: absolute;
+	left: 2vw;
+	height: 75%;
+}
 
+#about-page .nav {
+	background: green;
+	height: 5vh;
+}
 
-@media (max-width: 767.98px) {}
+#about-page h1 {
+	text-align: center;
+}
 
+#about-page .image > img {
+	margin-top: 5vh;
+	width: 10vw;
+}
 
-@media (max-width: 991.98px) {}
+#about-page .description {
+	height: 50vh;
+}
 
+#about-page .description > p {
+	margin-top: 5vh;
+	padding: 0 30%;
+}
 
-@media (max-width: 1199.98px) {}
+#about-page .footer {
+	background: darkgoldenrod;
+	height: 5vh;
+}
 
+#design-page {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
 
+#design-page .header {
+	position: relative;
+	background: teal;
+	height: 10vh;
+}
 
+#design-page .header > img {
+	position: absolute;
+	left: 2vw;
+	height: 75%;
+}
+
+#design-page .nav {
+	background: green;
+	height: 5vh;
+}
+
+#design-page .content {
+	border: 2px solid crimson;
+	height: 80vh;
+}
+
+#design-page .footer {
+	background: darkgoldenrod;
+	height: 5vh;
+}
+
+#design-page h1 {
+	text-align: center;
+}
+
+#design-page .instructions > p {
+	padding: 0 5%;
+}
+
+#design-page .instructions > button {
+	margin: 0 5%;
+	width: 20%;
+}

@@ -1,67 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="../js/index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-</head>
-<body>
-    
-    <section class="col-12 d-flex justify-content-center"><h1>Kontakt information</h1></section>
-            <form class="contact-form ">
-                
-                    <section class="form-row">
-                    <section class="form-group col-6">
-                        <input id="firstName" type="text" placeholder=" " required>
-                        <label for="firstname">Förnamn</label>
-                    </section>
-            
-                
-                    <section class="form-group col-6">
-                        <input id="lastName" type="text" placeholder=" " required>
-                        <label for="lastName">Efternamn</label>
-                    </section>
-                </section>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img
+        class="logo"
+        src="https://i.ibb.co/TbTNGF1/fce7bbadbe428ddec5f5d46faee5299e-swilring-floral-decoration-frame.png"
+      />
+      <h1>Maboram</h1>
+      <a
+        class="navbar-brand"
+        href="https://wallpapercave.com/wp/Y5b7lJ9.jpg"
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Hemsida <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="design.html">Designa din egen ram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subscription.html">Prenumeration</a>
+          </li>
+          <li class="nav-item">
+            <a class="active nav-link" href="products.html">Våra produkter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Om oss</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          You're framed!
+        </span>
+      </section>
+    </nav>
 
-                    <section class="form-row">
-                    <section class="form-group col-6">
-                            <input id="address" type="text" placeholder=" " required>
-                            <label for="address">Adress</label>
-                        </section>
+    <section class="contact col-12 d-flex justify-content-center">
+      <h2>Kontaktinformation</h2>
+    </section>
+    <form class="contact-form ">
+      <section class="form-row">
+        <section class="form-group col-6">
+          <input id="firstName" type="text" placeholder=" " required />
+          <label for="firstname">Förnamn</label>
+        </section>
 
-                        
-                        <section class="form-group col-6">
-                                <input id="c/o" type="text" placeholder=" ">
-                                <label for="c/o">C/o</label>
-                            </section>
-                        </section>
+        <section class="form-group col-6">
+          <input id="lastName" type="text" placeholder=" " required />
+          <label for="lastName">Efternamn</label>
+        </section>
 
-                            <section class="form-row">
-                            <section class="form-group col-6">
-                                    <input id="zip" type="number" placeholder=" " required>
-                                    <label for="zip">Postnr</label>
-                                </section>
+        <section class="form-group col-6">
+          <input id="address" type="text" placeholder=" " required />
+          <label for="address">Adress</label>
+        </section>
 
-                                <section class="form-group col-6">
-                                        <input id="city" type="text" placeholder=" " required>
-                                        <label for="city">Stad</label>
-                                    </section>
-                                </section>
-                                <section class="form-row">
-                                <button type="submit" id="submit">Gå vidare</button>
-                            </section>
-            </form>
-        
-        
+        <section class="form-group col-6">
+          <input id="c/o" type="text" placeholder=" " />
+          <label for="c/o">C/o</label>
+        </section>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+        <section class="form-group col-6">
+          <input id="zip" type="number" placeholder=" " required />
+          <label for="zip">Postnr</label>
+        </section>
+
+        <section class="form-group col-6">
+          <input id="city" type="text" placeholder=" " required />
+          <label for="city">Stad</label>
+        </section>
+        <button type="submit" id="submit">Gå vidare</button>
+      </section>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
