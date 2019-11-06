@@ -9,12 +9,68 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/design.css">
     <title>Maboram - Design</title>
+
+    <!-- Imports -->
+    <script src="https://kit.fontawesome.com/7174decb7e.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS and JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script defer src="../js/index.js"></script>
 </head>
 
 <body>
+
     <section id="design-page">
+
+        <!-- NAVBAR -->
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">(ICON) Maboram</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hemsida <span class="sr-only">(current)</span> </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Våra produkter</a>
+                        <section class="dropdown-menu">
+                          <a class="dropdown-item" href="subscription.html">Prenumeration</a>
+                          <a class="dropdown-item" href="design.html">Designa din egen ram</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Hjälp mig</a>
+                        </section>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Om oss</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    You're framed!
+                </span>
+            </section>
+            <a href="shopping-cart.html" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart"></span> <i class="fas fa-shopping-cart"></i>
+            </a>
+        </nav>
+
+        <!-- /NAVBAR -->
+
         <section class="container-fluid">
+
+            <!-- HEADER -->
+
             <section class="row">
                 <section class="header col-12 d-flex justify-content-center align-items-center">
                     <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?v=1530129081"
@@ -22,26 +78,85 @@
                     <h1>Designa din ram</h1>
                 </section>
             </section>
+
+            <!-- /HEADER -->
+
+            <!-- NAV-PLACEHOLDER -->
+            <!--
             <section class="nav row d-flex justify-content-center">
                 <p>navigation placeholder</p>
             </section>
-            <section class="row">
-                <section class="content col-8 d-flex justify-content-center align-items-center">
-                    <p>content area</p>
+            -->
+            <!-- /NAV-PLACEHOLDER -->
+
+            <section class="content-row row d-flex flex-column flex-sm-row">
+
+                <!-- SHAPE-CONTROLS -->
+
+                <section class="shape col-2"> <!-- d-flex flex-column justify-content-center -->
+                    <section class="row d-flex flex-row flex-sm-column align-items-center">
+                        <section class="option col-4 col-sm-12 d-flex justify-content-around">
+                            <label for="shape-rectangle" class="d-flex align-items-center">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?v=1530129081">
+                            </label>
+                            <input type="radio" name="shape-radio" id="shape-rectangle">
+                        </section>
+                        <section class="option col-4 col-sm-12 d-flex justify-content-around">
+                            <label for="shape-triangle" class="d-flex align-items-center">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?v=1530129081">
+                            </label>
+                            <input type="radio" name="shape-radio" id="shape-triangle">
+                        </section>
+                        <section class="option col-4 col-sm-12 d-flex justify-content-around">
+                            <label for="shape-circle" class="d-flex align-items-center">
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?v=1530129081">
+                            </label>
+                            <input type="radio" name="shape-radio" id="shape-circle">
+                        </section>
+                    </section>
+                </section>
+
+                <!-- /SHAPE-CONTROLS -->
+
+                <!-- CONTENT -->
+
+                <section class="content col-12 col-sm-6 d-flex justify-content-center align-items-center">
                     <img src="https://i0.wp.com/www.paintingswithfabric.com/art/wc_frames/gold_black36x28.gif?w=600">
                 </section>
-                <section class="instructions col-4 d-flex flex-column justify-content-center">
+
+                <!-- /CONTENT -->
+
+                <!-- INSTRUCTIONS -->
+
+                <section class="instructions col-12 col-sm-4 d-flex flex-column justify-content-center">
                     <p>Instruktioner</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <button>Nästa</button>
                 </section>
+
+                <!-- /INSTRUCTIONS -->
+
             </section>
+
+            <!-- FOOTER -->
+
             <section class="row">
                 <section class="footer col-12 d-flex justify-content-center">
                     <p>footer placeholder</p>
                 </section>
             </section>
+
+            <!-- /FOOTER -->
+
         </section>
+
     </section>
 </body>
 
