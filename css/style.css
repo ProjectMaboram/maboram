@@ -10,14 +10,6 @@ h1 {
   color: white;
   font-family: "Parisienne", cursive;
 }
-h2 {
-  margin-top: 20px;
-}
-
-.form-row {
-  display: grid;
-  justify-content: center;
-}
 
 .logo {
   max-height: 90px;
@@ -27,6 +19,7 @@ h2 {
 
 .navbar {
   z-index: 100;
+  background-color: darkgrey;
 }
 
 .header {
@@ -41,6 +34,6 @@ h2 {
 }
 
 .footer {
-  background: darkgoldenrod;
+  background: rgb(73, 71, 71);
   height: 5vh;
 }
