@@ -13,11 +13,6 @@ h1 {
 h2 {
   margin-top: 20px;
 }
-
-.form-row {
-  display: grid;
-  justify-content: center;
-}
 .logo {
   max-height: 90px;
   max-width: 90px;
@@ -40,6 +35,6 @@ h2 {
 }
 
 .footer {
-  background: darkgoldenrod;
+  background: rgb(73, 71, 71);
   height: 5vh;
 }
