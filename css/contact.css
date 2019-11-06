@@ -44,3 +44,9 @@ input::-webkit-inner-spin-button {
   display: grid;
   justify-content: center;
 }
+h2 {
+  margin-top: 20px;
+}
+.contact {
+	margin-top: 120px;
+}
