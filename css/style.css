@@ -2,6 +2,7 @@ body {
   font-family: "Handlee", cursive;
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
 }
+
 h1 {
   font-size: 30px;
   font-weight: bold;
@@ -21,4 +22,24 @@ h2 {
   max-height: 90px;
   max-width: 90px;
   object-fit: cover;
+}
+
+.navbar {
+  z-index: 100;
+}
+
+.header {
+  position: relative;
+  background: teal;
+  height: 10vh;
+  margin-top: 7.5vh;
+}
+
+.header>h1 {
+  text-align: center;
+}
+
+.footer {
+  background: darkgoldenrod;
+  height: 5vh;
 }

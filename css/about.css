@@ -1,0 +1,28 @@
+#about-page {
+    position: relative;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+  }
+  
+  #about-page .header>img {
+    position: absolute;
+    left: 2vw;
+    height: 75%;
+  }
+  
+  #about-page .image>img {
+    margin-top: 5vh;
+    width: 10vw;
+  }
+  
+  #about-page .description {
+    height: 50vh;
+    /*border: 2px solid blue;*/
+  }
+  
+  #about-page .description>p {
+    margin-top: 5vh;
+    padding: 0 30%;
+    
+  }

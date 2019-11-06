@@ -9,9 +9,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
     <title>Maboram - About</title>
 
     <!-- Imports -->
+    <script src="https://kit.fontawesome.com/7174decb7e.js" crossorigin="anonymous"></script>
 
     <!-- jQuery and Popper.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -46,15 +48,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Hemsida <span class="sr-only">(current)</span> </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="design.html">Designa din egen ram</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="subscription.html">Prenumeration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Våra produkter</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Våra produkter</a>
+                        <section class="dropdown-menu">
+                          <a class="dropdown-item" href="subscription.html">Prenumeration</a>
+                          <a class="dropdown-item" href="design.html">Designa din egen ram</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Hjälp mig</a>
+                        </section>
+                      </li>
                     <li class="nav-item">
                         <a class="active nav-link" href="about.html">Om oss</a>
                     </li>
@@ -63,6 +65,9 @@
                     You're framed!
                 </span>
             </section>
+            <a href="shopping-cart.html" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart"></span> <i class="fas fa-shopping-cart"></i>
+            </a>
         </nav>
 
         <!-- /NAVBAR -->
