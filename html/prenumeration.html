@@ -10,6 +10,15 @@
       crossorigin="anonymous"
     ></script>
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- jQuery and Popper.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
@@ -30,13 +39,17 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/subscription.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/prenumeration.css" />
 
     <title>Prenumeration</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">(ICON) Maboram</a>
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="../img/Logo.png" /> Maboram</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -94,7 +107,7 @@
       <form>
         <section class="form-row">
           <section class="col-6">
-            <fieldset class="form-group">
+            <fieldset class="form-group" id="optionThemes">
               <legend>Välj ditt tema</legend>
               <section class="form-row justify-content-center flex-nowrap">
                 <section class="form-check form-check-inline flex-column">
@@ -107,6 +120,7 @@
                     name="theme"
                     required
                     class="form-check-input"
+                    checked
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
@@ -136,7 +150,7 @@
               </section>
             </fieldset>
           </section>
-          <section class="col-3">
+          <section class="col-4">
             <fieldset class="form-group">
               <legend>Prenumerationsintervall</legend>
               <select id="intervall" class="form-control">
@@ -151,41 +165,42 @@
 
         <section class="form-row">
           <section class="col-6">
-            <fieldset class="form-group">
+            <fieldset class="form-group" id="optionShapes">
               <legend>Välj form på ramen</legend>
               <section class="form-row justify-content-center flex-nowrap">
                 <section class="form-check form-check-inline flex-column">
                   <label for="s1" class="form-check-label">
-                    <img src="../img/frameSquare.png" />
+                    <img src="../img/frameSquareTrans.png" />
                   </label>
                   <input
                     type="radio"
                     id="s1"
-                    name="theme"
+                    name="shape"
                     required
                     class="form-check-input"
+                    checked
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
                   <label for="s2" class="form-check-label">
-                    <img src="../img/frameRound.png" />
+                    <img src="../img/frameRoundTrans.png" />
                   </label>
                   <input
                     type="radio"
                     id="s2"
-                    name="theme"
+                    name="shape"
                     required
                     class="form-check-input"
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
                   <label for="s3" class="form-check-label">
-                    <img src="../img/frameTriangle.png" />
+                    <img src="../img/frameTriangleTrans.png" />
                   </label>
                   <input
                     type="radio"
                     id="s3"
-                    name="theme"
+                    name="shape"
                     required
                     class="form-check-input"
                   />
@@ -194,12 +209,15 @@
             </fieldset>
           </section>
 
-          <section class="col-3">
+          <section class="col-4">
             <fieldset class="form-group">
-              <legend>Välj storlek på ramen</legend>
+              <legend>Ramstorlek</legend>
               <section id="msrSquare">
                 <section class="form-row">
-                  <label for="msrSquareWidth" class="col col-form-label"
+                  <label
+                    id="lblFirstMeasurement"
+                    for="msrSquareWidth"
+                    class="col col-form-label"
                     >Bredd:
                   </label>
                   <section class="col">
@@ -232,5 +250,15 @@
         </section>
       </form>
     </main>
+
+    <!-- FOOTER -->
+
+    <section class="row">
+      <section class="footer col-12 d-flex justify-content-center">
+        <p>footer placeholder</p>
+      </section>
+    </section>
+
+    <!-- /FOOTER -->
   </body>
 </html>
