@@ -13,8 +13,9 @@ fieldset {
 
 legend {
   width: auto;
-  max-width: 50%;
+  font-size: 100%;
   padding: 2vh 2vh;
+  margin-left: 10px;
 }
 
 label {
