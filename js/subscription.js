@@ -3,5 +3,27 @@ $(document).on("click", "#optionThemes input[type=radio]", () => {
 });
 
 $(document).on("click", "#optionShapes input[type=radio]", e => {
-  console.log("Clicked a shape!", $(e.target));
+  let sLbl = "";
+  switch (event.target.id) {
+    case "s1":
+      sLbl = "Bredd:";
+      $("#secondMeasure").show();
+      console.log("rektangel!");
+
+      break;
+
+    case "s2":
+      sLbl = "Radie:";
+      $("#secondMeasure").hide();
+      console.log("cirkel!");
+      break;
+
+    case "s3":
+      sLbl = "Sida:";
+      $("#secondMeasure").hide();
+      console.log("triangel!");
+      break;
+  }
+
+  $(lblFirstMeasurement).text(sLbl);
 });

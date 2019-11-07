@@ -46,6 +46,7 @@
     <title>Prenumeration</title>
   </head>
   <body>
+    <!-- Navbar starts here  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img class="logo" src="../img/Logo.png" /> Maboram</a
@@ -102,10 +103,12 @@
         <i class="fas fa-shopping-cart"></i>
       </a>
     </nav>
+    <!-- Navbar ends here  -->
 
     <main class="container">
       <form>
         <section class="form-row">
+          <!-- The first column first row, select theme, starts here  -->
           <section class="col-6">
             <fieldset class="form-group" id="optionThemes">
               <legend>Välj ditt tema</legend>
@@ -150,9 +153,12 @@
               </section>
             </fieldset>
           </section>
-          <section class="col-4">
+          <!-- The first column first row, select theme, enbs here  -->
+
+          <!-- The second column first row, select interval, starts here  -->
+          <section class="col-2">
             <fieldset class="form-group">
-              <legend>Prenumerationsintervall</legend>
+              <legend>Intervall</legend>
               <select id="intervall" class="form-control">
                 <option selected>Välj prenumerationsintervall</option>
                 <option>Var trejde månad</option>
@@ -161,9 +167,11 @@
               </select>
             </fieldset>
           </section>
+          <!-- The second column, select interval, ends here  -->
         </section>
 
         <section class="form-row">
+          <!-- The first column second row, select frame shape, starts here  -->
           <section class="col-6">
             <fieldset class="form-group" id="optionShapes">
               <legend>Välj form på ramen</legend>
@@ -208,8 +216,10 @@
               </section>
             </fieldset>
           </section>
+          <!-- The first column second row, select frame shape, ends here  -->
 
-          <section class="col-4">
+          <!-- The second column second row, select frame size, starts here  -->
+          <section class="col-2 framesize">
             <fieldset class="form-group">
               <legend>Ramstorlek</legend>
               <section id="msrSquare">
@@ -220,7 +230,7 @@
                     class="col col-form-label"
                     >Bredd:
                   </label>
-                  <section class="col">
+                  <section class="col textfieldcol">
                     <input
                       type="text"
                       class="form-control"
@@ -228,11 +238,11 @@
                     />
                   </section>
                 </section>
-                <section class="form-row">
+                <section class="form-row" id="secondMeasure">
                   <label for="msrSquareHeight" class="col col-form-label"
                     >Höjd:
                   </label>
-                  <section class="col">
+                  <section class="col textfieldcol">
                     <input
                       type="text"
                       class="form-control"
@@ -243,6 +253,7 @@
               </section>
             </fieldset>
           </section>
+          <!-- The second column second row, select frame size, ends here  -->
         </section>
 
         <section class="form-row justify-content-end">
@@ -252,13 +263,11 @@
     </main>
 
     <!-- FOOTER -->
-
     <section class="row">
       <section class="footer col-12 d-flex justify-content-center">
         <p>footer placeholder</p>
       </section>
     </section>
-
     <!-- /FOOTER -->
   </body>
 </html>
