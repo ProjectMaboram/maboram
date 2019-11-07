@@ -1,14 +1,9 @@
 #about-page {
+    display: grid;
     position: relative;
     color: white;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-  }
-  
-  #about-page .header>img {
-    position: absolute;
-    left: 2vw;
-    height: 75%;
   }
   
   #about-page .image>img {

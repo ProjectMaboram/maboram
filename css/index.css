@@ -1,0 +1,23 @@
+#index-page {
+    display: grid;
+    position: relative;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+#index-page #header-row {
+    /*border: 2px solid blue;*/
+}
+/*
+#index-page #content-row {
+    border: 2px solid blue;
+}
+
+#index-page #footer-row {
+    border: 2px solid blue;
+}
+*/
+#index-page .home-ad {
+    border: 2px solid crimson;
+}
