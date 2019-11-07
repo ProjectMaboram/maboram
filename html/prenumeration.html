@@ -39,7 +39,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/storage.js" defer></script>
     <script src="../js/subscription.js" defer></script>
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/prenumeration.css" />
 
@@ -106,7 +108,7 @@
     <!-- Navbar ends here  -->
 
     <main class="container">
-      <form>
+      <form id="frmPren">
         <section class="form-row">
           <!-- The first column first row, select theme, starts here  -->
           <section class="col-6">
@@ -114,12 +116,12 @@
               <legend>Välj ditt tema</legend>
               <section class="form-row justify-content-center flex-nowrap">
                 <section class="form-check form-check-inline flex-column">
-                  <label for="t1" class="form-check-label">
+                  <label for="NewYork" class="form-check-label">
                     <img src="../img/NewYork.jpg" />
                   </label>
                   <input
                     type="radio"
-                    id="t1"
+                    id="NewYork"
                     name="theme"
                     required
                     class="form-check-input"
@@ -127,24 +129,24 @@
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
-                  <label for="t2" class="form-check-label">
+                  <label for="Paris" class="form-check-label">
                     <img src="../img/Paris.jpg" />
                   </label>
                   <input
                     type="radio"
-                    id="t2"
+                    id="Paris"
                     name="theme"
                     required
                     class="form-check-input"
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
-                  <label for="t3" class="form-check-label">
+                  <label for="Stockholm" class="form-check-label">
                     <img src="../img/Stockholm.jpg" />
                   </label>
                   <input
                     type="radio"
-                    id="t3"
+                    id="Stockholm"
                     name="theme"
                     required
                     class="form-check-input"
@@ -159,11 +161,11 @@
           <section class="col-2">
             <fieldset class="form-group">
               <legend>Intervall</legend>
-              <select id="intervall" class="form-control">
-                <option selected>Välj prenumerationsintervall</option>
-                <option>Var trejde månad</option>
-                <option>Var sjätte månad</option>
-                <option>En gång om året</option>
+              <select id="intervall" class="form-control" required>
+                <option value="" selected>Välj prenumerationsintervall</option>
+                <option value="tredje">Var trejde månad</option>
+                <option value="fjärde">Var sjätte månad</option>
+                <option value="årligen">En gång om året</option>
               </select>
             </fieldset>
           </section>
@@ -177,12 +179,12 @@
               <legend>Välj form på ramen</legend>
               <section class="form-row justify-content-center flex-nowrap">
                 <section class="form-check form-check-inline flex-column">
-                  <label for="s1" class="form-check-label">
+                  <label for="Rektangel" class="form-check-label">
                     <img src="../img/frameSquareTrans.png" />
                   </label>
                   <input
                     type="radio"
-                    id="s1"
+                    id="Rektangel"
                     name="shape"
                     required
                     class="form-check-input"
@@ -190,24 +192,24 @@
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
-                  <label for="s2" class="form-check-label">
+                  <label for="Cirkel" class="form-check-label">
                     <img src="../img/frameRoundTrans.png" />
                   </label>
                   <input
                     type="radio"
-                    id="s2"
+                    id="Cirkel"
                     name="shape"
                     required
                     class="form-check-input"
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
-                  <label for="s3" class="form-check-label">
+                  <label for="Triangel" class="form-check-label">
                     <img src="../img/frameTriangleTrans.png" />
                   </label>
                   <input
                     type="radio"
-                    id="s3"
+                    id="Triangel"
                     name="shape"
                     required
                     class="form-check-input"
@@ -226,7 +228,7 @@
                 <section class="form-row">
                   <label
                     id="lblFirstMeasurement"
-                    for="msrSquareWidth"
+                    for="txtFirstMeasurement"
                     class="col col-form-label"
                     >Bredd:
                   </label>
@@ -234,19 +236,21 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="msrSquareWidth"
+                      id="txtFirstMeasurement"
+                      required
                     />
                   </section>
                 </section>
                 <section class="form-row" id="secondMeasure">
-                  <label for="msrSquareHeight" class="col col-form-label"
+                  <label for="txtSecondMeasurement" class="col col-form-label"
                     >Höjd:
                   </label>
                   <section class="col textfieldcol">
                     <input
                       type="text"
                       class="form-control"
-                      id="msrSquareHeight"
+                      id="txtSecondMeasurement"
+                      required
                     />
                   </section>
                 </section>
@@ -257,7 +261,7 @@
         </section>
 
         <section class="form-row justify-content-end">
-          <button id="next">Nästa!</button>
+          <button type="submit" id="next">Nästa!</button>
         </section>
       </form>
     </main>
