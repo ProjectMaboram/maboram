@@ -36,11 +36,12 @@ $(document).on("submit", "#frmPren", e => {
   e.preventDefault();
 
   let sMsr = "";
-  let ls = new LocalStorage();
+  let cm = new CartManager();
 
   let sInt = $("#intervall option:selected").text();
   let sTheme = $("#optionThemes input[type=radio]:checked").attr("id");
   let sShape = $("#optionShapes input[type=radio]:checked").attr("id");
+  let price = $("#optionThemes input[type=radio]:checked").attr("price");
 
   switch (sShape) {
     case "Rektangel":
@@ -60,14 +61,13 @@ $(document).on("submit", "#frmPren", e => {
       break;
   }
 
-  // Sätt samman ett prenumerationobjekt
-  let prenumeration = {
-    tema: sTheme,
-    intervall: sInt,
-    form: sShape,
-    mått: sMsr
-  };
+  // Skapa ett kundvagnsobjekt
+  let item = new CartItem(
+    "Prenumeration på " + sTheme + ", " + sInt + ", " + sShape + ", " + sMsr,
+    1,
+    price
+  );
 
-  // Spara ner all info i local storage, skriv över om det finns ett entry redan
-  ls.set("prenumeration", prenumeration);
+  // Lägg prenumerationen i kundvagnen
+  cm.add(item);
 });
