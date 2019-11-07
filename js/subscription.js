@@ -1,8 +1,8 @@
-$(document).on("click", "#optionThemes input[type=radio]", () => {
-  console.log("Clicked a theme!");
-});
+// $(document).on("click", "#optionThemes input[type=radio]", () => {
+//   console.log("Clicked a theme!");
+// });
 
-// Hanterar när nan klickar på ranform - ser till att rätt etikett sätts på första måttet
+// Hanterar när man klickar på ramform - ser till att rätt etikett sätts på första måttet
 // och att andra måttet döljs/visas som det ska
 $(document).on("click", "#optionShapes input[type=radio]", e => {
   let sLbl = "";
@@ -11,7 +11,6 @@ $(document).on("click", "#optionShapes input[type=radio]", e => {
       sLbl = "Bredd:";
       $("#secondMeasure").show();
       $("#txtSecondMeasurement").prop("required", true);
-      console.log("rektangel!");
 
       break;
 
@@ -19,14 +18,12 @@ $(document).on("click", "#optionShapes input[type=radio]", e => {
       sLbl = "Radie:";
       $("#secondMeasure").hide();
       $("#txtSecondMeasurement").prop("required", false);
-      console.log("cirkel!");
       break;
 
     case "Triangel":
       sLbl = "Sida:";
       $("#secondMeasure").hide();
       $("#txtSecondMeasurement").prop("required", false);
-      console.log("triangel!");
       break;
   }
 
@@ -41,14 +38,9 @@ $(document).on("submit", "#frmPren", e => {
   let sMsr = "";
   let ls = new LocalStorage();
 
-  let sTheme = $("#optionThemes input[type=radio]:checked").attr("id");
-  console.log("Valt tema: ", sTheme);
-
   let sInt = $("#intervall option:selected").text();
-  console.log("Valt intervall: ", sInt);
-
+  let sTheme = $("#optionThemes input[type=radio]:checked").attr("id");
   let sShape = $("#optionShapes input[type=radio]:checked").attr("id");
-  console.log("Vald ramform: ", sShape);
 
   switch (sShape) {
     case "Rektangel":
@@ -68,11 +60,14 @@ $(document).on("submit", "#frmPren", e => {
       break;
   }
 
-  console.log("Mått: ", sMsr);
+  // Sätt samman ett prenumerationobjekt
+  let prenumeration = {
+    tema: sTheme,
+    intervall: sInt,
+    form: sShape,
+    mått: sMsr
+  };
 
-  // Spara ner all info i local storage
-  ls.set("prenumerationTema", sTheme);
-  ls.set("prenumerationIntervall", sInt);
-  ls.set("prenumerationRamform", sShape);
-  ls.set("prenumerationMått", sMsr);
+  // Spara ner all info i local storage, skriv över om det finns ett entry redan
+  ls.set("prenumeration", prenumeration);
 });
