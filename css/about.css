@@ -7,12 +7,8 @@
   }
   
   #about-page .image>img {
-    margin-top: 5vh;
+    margin-top: 120px;
     width: 10vw;
-  }
-  
-  #about-page .description {
-    height: 50vh;
   }
   
   #about-page .description>p {
