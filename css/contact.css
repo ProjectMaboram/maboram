@@ -59,3 +59,7 @@ footer {
 p {
 	text-align: center;
 }
+#confirm {
+	display: none;
+	margin-left: 80%;
+}

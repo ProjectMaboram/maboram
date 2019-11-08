@@ -26,6 +26,8 @@ function emptyContactForm() {
 }
 $(document).ready(function() {
   $("#submit").click(function() {
-    $("#contactForm").toggle();
+      $("#contactForm").toggle();
+      $("#confirm").toggle();
+      $("#submit").toggle();
   });
 });
