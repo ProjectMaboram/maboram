@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+main > section > article > p:first-child {
+  margin-top: 2vh;
+}
+
 input[type="radio"] {
   margin: 5px 0 !important;
 }
@@ -40,4 +44,8 @@ label img {
 select {
   margin: auto;
   width: 95% !important;
+}
+
+.header {
+  margin: 0 !important;
 }
