@@ -41,3 +41,7 @@
   .footer>p {
     margin:0;
   }
+
+  #carouselExampleSlidesOnly {
+    width: 100%;
+  }
