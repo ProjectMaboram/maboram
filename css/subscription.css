@@ -49,13 +49,22 @@ select {
 }
 
 .preview {
+  width: 150px;
+  height: 150px;
   text-align: center;
   margin-bottom: 2vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .imgPreview {
+  margin: auto;
   width: 150px;
   height: 150px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .newYork {
@@ -63,7 +72,7 @@ select {
   border-left: 1px dashed red;
   border-bottom: 1px solid red;
   border-right: 1px dashed red;
-  background: url("../img/NewYork.jpg") 50% 50% no-repeat;
+  --bg-Img: url("../img/NewYork.jpg");
 }
 
 .paris {
@@ -71,7 +80,7 @@ select {
   border-left: 4px dashed green;
   border-bottom: 10px dotted green;
   border-right: 4px dashed green;
-  background: url("../img/Paris.jpg") 50% 50% no-repeat;
+  --bg-Img: url("../img/Paris.jpg");
 }
 
 .stockholm {
@@ -79,27 +88,38 @@ select {
   border-left: 3px solid blue;
   border-bottom: 3px double blue;
   border-right: 3px solid blue;
-  background: url("../img/Stockholm.jpg") 50% 50% no-repeat;
-
-  /* width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 75px 129.9px 75px;
-  border-color: transparent transparent #007bff transparent; */
+  --bg-Img: url("../img/Stockholm.jpg");
 }
 
 .triangle {
-  object-fit: none;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  top: -20px;
+  left: -50px;
+  width: 17%;
+
+  overflow: hidden;
+  position: relative;
+  transform-origin: 0 100%;
+  transform: rotate(45deg);
+  /* padding-bottom = width / sqrt(2) */
+  padding-bottom: 225px; /* 106 */
+}
+
+.triangle:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: var(--bg-Img);
+
+  transform-origin: 0 100%;
+  transform: rotate(-45deg);
 }
 
 .rectangle {
-  clip-path: none;
-  object-fit: none;
+  background-image: var(--bg-Img);
 }
 
 .circle {
-  clip-path: none;
-  object-fit: cover;
   border-radius: 50%;
+  background-image: var(--bg-Img);
 }
