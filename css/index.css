@@ -23,3 +23,10 @@
 #index-page #content-row>section>p {
     padding-left: 5%;
 }
+@media only screen and (max-width: 600px) {
+  p {
+    width: 110px;
+  height: 110px;
+  overflow: auto;
+  }
+}
