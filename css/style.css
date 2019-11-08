@@ -13,14 +13,18 @@ h1 {
 }
 
 .logo {
-  max-height: 90px;
-  max-width: 90px;
+  max-height: 60px;
+  max-width: 60px;
   object-fit: cover;
 }
 
 .navbar {
   z-index: 100;
   background-color: darkgrey;
+}
+
+.navbar-toggler {
+  color:black;
 }
 
 .header {

@@ -2,16 +2,25 @@
     display: grid;
     position: relative;
     color: black;
-    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
   }
   
   #about-page .image>img {
-    margin-top: 120px;
-    width: 10vw;
+    margin-top: calc(120px + 5vh);
+    width: 20vmax;
   }
   
   #about-page .description>p {
     margin-top: 5vh;
-    padding: 0 30%;
+    padding: 0 20%;
+  }
+
+  .footer>p {
+    margin:0;
+  }
+
+  @media screen and (max-width: 575px) {
+    #about-page .description>p {
+      padding: 0 5%;
+    }
   }
