@@ -63,3 +63,6 @@ p {
 	margin-left: 80%;
 }
 
+body {
+	display: grid;
+}
