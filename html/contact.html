@@ -10,32 +10,35 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/contact.js"></script>
+    <!--Fontstyle Logo-->
     <link
       href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
       rel="stylesheet"
     />
+    <!--/FontStyle Logo-->
+    <!--FontStyle Other-->
     <link
       href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
       rel="stylesheet"
     />
+    <!--/FontStyle Other-->
+    <script
+      src="https://kit.fontawesome.com/7174decb7e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <img
-        class="logo"
-        src="../img/Logo.png"
-      />
+      <!--NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <img class="logo" src="../img/Logo.png" />
       <h1>Maboram</h1>
-      <a
-        class="navbar-brand"
-        href="https://wallpapercave.com/wp/Y5b7lJ9.jpg"
-      ></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -54,14 +57,26 @@
               >Hemsida <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="design.html">Designa din egen ram</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="subscription.html">Prenumeration</a>
-          </li>
-          <li class="nav-item">
-            <a class="active nav-link" href="products.html">Våra produkter</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Våra produkter</a
+            >
+            <section class="dropdown-menu">
+              <a class="dropdown-item" href="subscription.html"
+                >Prenumeration</a
+              >
+              <a class="dropdown-item" href="design.html"
+                >Designa din egen ram</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Hjälp mig</a>
+            </section>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">Om oss</a>
@@ -71,50 +86,65 @@
           You're framed!
         </span>
       </section>
+      <a href="shopping-cart.html" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        <i class="fas fa-shopping-cart"></i>
+      </a>
     </nav>
+                <!--/NavBar-->
 
+                <!--Header-->
     <section class="contact col-12 d-flex justify-content-center">
       <h2>Kontaktinformation</h2>
     </section>
-    <form class="contact-form ">
+                <!--/Header-->
+                <!--ContactForm -->
+    <section id="formContact"></section>
+    <form class="contact-form" id="contactForm">
       <section class="form-row">
-        <section class="form-group col-6">
+        <section class="form-group">
           <input id="firstName" type="text" placeholder=" " required />
-          <label for="firstname">Förnamn</label>
+          <label for="firstName">Förnamn</label>
         </section>
 
-        <section class="form-group col-6">
+        <section class="form-group">
           <input id="lastName" type="text" placeholder=" " required />
           <label for="lastName">Efternamn</label>
         </section>
 
-        <section class="form-group col-6">
+        <section class="form-group">
           <input id="address" type="text" placeholder=" " required />
           <label for="address">Adress</label>
         </section>
 
-        <section class="form-group col-6">
-          <input id="c/o" type="text" placeholder=" " />
-          <label for="c/o">C/o</label>
+        <section class="form-group">
+          <input id="co" type="text" placeholder=" " />
+          <label for="co">C/o</label>
         </section>
 
-        <section class="form-group col-6">
+        <section class="form-group">
           <input id="zip" type="number" placeholder=" " required />
           <label for="zip">Postnr</label>
         </section>
 
-        <section class="form-group col-6">
+        <section class="form-group">
           <input id="city" type="text" placeholder=" " required />
           <label for="city">Stad</label>
         </section>
-        <button type="submit" id="submit">Gå vidare</button>
       </section>
     </form>
-<section class="row">
-                <section class="footer col-12 d-flex justify-content-center">
-                    <p>footer placeholder</p>
-                </section>
-            </section>
+                <!--/ContactForm-->
+                <!--Buttons-->
+    <button type="button" id="submit">Gå vidare</button>
+    <section class="row"><button type="button" id="confirm">Bekräfta</button>
+      </section>
+      <!--/Buttons-->
+      <!--Footer-->
+      <section class="footer col-12 d-flex justify-content-center">
+        <p>footer placeholder</p>
+    </section>
+      <!--/Footer-->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

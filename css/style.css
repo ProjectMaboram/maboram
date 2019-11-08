@@ -1,33 +1,40 @@
 body {
   font-family: "Handlee", cursive;
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
+  min-height: 100vh;
 }
 
 h1 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 7px;
-  color: white;
+  color: rgb(82, 60, 6);
   font-family: "Parisienne", cursive;
 }
-h2 {
-  margin-top: 20px;
-}
+
 .logo {
-  max-height: 90px;
-  max-width: 90px;
+  max-height: 60px;
+  max-width: 60px;
   object-fit: cover;
 }
 
 .navbar {
   z-index: 100;
+  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
+  color: black;
 }
 
 .header {
   position: relative;
   background: teal;
-  height: 10vh;
-  margin-top: 7.5vh;
+  height: 8vh;
+  margin-top: 6.5vh;
+}
+
+.header>img {
+  position: absolute;
+  left: 2vw;
+  height: 75%;
 }
 
 .header>h1 {
@@ -35,6 +42,11 @@ h2 {
 }
 
 .footer {
-  background: rgb(73, 71, 71);
+  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
   height: 5vh;
+  align-self: flex-end;
 }
+a {
+  color: white;
+}
+

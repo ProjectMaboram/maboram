@@ -1,28 +1,30 @@
 #about-page {
+    display: grid;
     position: relative;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    color: black;
     min-height: 100vh;
-  }
-  
-  #about-page .header>img {
-    position: absolute;
-    left: 2vw;
-    height: 75%;
   }
   
   #about-page .image>img {
     margin-top: 5vh;
-    width: 10vw;
-  }
-  
-  #about-page .description {
-    height: 50vh;
-    /*border: 2px solid blue;*/
+    width: 20vmax;
   }
   
   #about-page .description>p {
     margin-top: 5vh;
-    padding: 0 30%;
-    
+    padding: 0 20%;
+  }
+
+  .footer>p {
+    margin:0;
+  }
+
+  .header {
+    margin-top: 10.1vh !important;
+  }
+
+  @media screen and (max-width: 575px) {
+    #about-page .description>p {
+      padding: 0 5%;
+    }
   }

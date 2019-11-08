@@ -1,0 +1,29 @@
+#index-page {
+    display: grid;
+    position: relative;
+    min-height: 100vh;
+}
+
+#index-page #content-row {
+    color: black;
+    margin-top: 5vh;
+    padding-top: 5vh;
+}
+
+#index-page #content-row>section {
+    height: 20vh;
+    padding: 0 0 0 5%; 
+    margin-bottom: 10px;    
+}
+
+#index-page #content-row>section>img {
+    height: 100%;
+}
+
+#index-page #content-row>section>p {
+    padding-left: 5%;
+}
+
+.header {
+    margin-top: 10.1vh !important;
+}
