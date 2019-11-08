@@ -6,7 +6,7 @@
 
 #index-page #content-row {
     color: black;
-    margin-top: 120px;
+    margin-top: 5vh;
     padding-top: 5vh;
 }
 
@@ -22,4 +22,8 @@
 
 #index-page #content-row>section>p {
     padding-left: 5%;
+}
+
+.header {
+    margin-top: 10.1vh !important;
 }
