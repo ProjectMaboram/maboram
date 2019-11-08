@@ -1,6 +1,7 @@
 .contact-form {
 	padding: 8px;
 	color: black;
+	background-color: none;
 }
 
 .contact-form section {
@@ -48,4 +49,13 @@ h2 {
 }
 .contact {
 	margin-top: 120px;
+}
+#submit {
+	margin-left: 80%;
+}
+footer {
+	margin-top: 50px;
+}
+p {
+	text-align: center;
 }

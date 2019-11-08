@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/contact.css" />
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/contact.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
       rel="stylesheet"
@@ -93,11 +94,12 @@
     <section class="contact col-12 d-flex justify-content-center">
       <h2>Kontaktinformation</h2>
     </section>
-    <form class="contact-form ">
+    <section id="formContact"></section>
+    <form class="contact-form" id="contactForm">
       <section class="form-row">
         <section class="form-group col-6">
           <input id="firstName" type="text" placeholder=" " required />
-          <label for="firstname">Förnamn</label>
+          <label for="firstName">Förnamn</label>
         </section>
 
         <section class="form-group col-6">
@@ -111,8 +113,8 @@
         </section>
 
         <section class="form-group col-6">
-          <input id="c/o" type="text" placeholder=" " />
-          <label for="c/o">C/o</label>
+          <input id="co" type="text" placeholder=" " />
+          <label for="co">C/o</label>
         </section>
 
         <section class="form-group col-6">
@@ -124,9 +126,9 @@
           <input id="city" type="text" placeholder=" " required />
           <label for="city">Stad</label>
         </section>
-        <button type="submit" id="submit">Gå vidare</button>
+        
       </section>
-    </form>
+    </form><button type="button" id="submit">Gå vidare</button>
     <section class="row">
       <section class="footer col-12 d-flex justify-content-center">
         <p>footer placeholder</p>
