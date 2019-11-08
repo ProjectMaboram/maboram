@@ -1,20 +1,19 @@
 #index-page {
     display: grid;
     position: relative;
-    color: black;
-    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
 }
 
 #index-page #content-row {
-    height: 82vh;
+    color: black;
     margin-top: 120px;
+    padding-top: 5vh;
 }
 
 #index-page #content-row>section {
-    height: 225px;
-    border: 1px solid black;
-    padding: 0;
+    height: 20vh;
+    padding: 0 0 0 5%; 
+    margin-bottom: 10px;    
 }
 
 #index-page #content-row>section>img {

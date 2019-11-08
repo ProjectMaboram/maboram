@@ -25,6 +25,10 @@ h1 {
   opacity: 1;
 }
 
+.navbar-toggler {
+  color:black;
+}
+
 .header {
   position: relative;
   background: teal;
