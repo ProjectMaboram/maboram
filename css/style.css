@@ -1,6 +1,7 @@
 body {
   font-family: "Handlee", cursive;
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
+  min-height: 100vh;
 }
 
 h1 {
@@ -25,8 +26,14 @@ h1 {
 .header {
   position: relative;
   background: teal;
-  height: 10vh;
-  margin-top: 7.5vh;
+  height: 8vh;
+  margin-top: 6.5vh;
+}
+
+.header>img {
+  position: absolute;
+  left: 2vw;
+  height: 75%;
 }
 
 .header>h1 {
@@ -36,4 +43,5 @@ h1 {
 .footer {
   background: rgb(73, 71, 71);
   height: 5vh;
+  align-self: flex-end;
 }

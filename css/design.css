@@ -1,22 +1,13 @@
 #design-page {
+  display: grid;
     position: relative;
     color: white;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
   }
   
-  #design-page .header>img {
-    position: absolute;
-    left: 2vw;
-    height: 75%;
-  }
-  
   #design-page .content-row{
-    min-height: 77.5vh;
-  }
-  
-  #design-page h1 { 
-    text-align: center;
+    margin-top: 120px;
   }
   
   #design-page .instructions>p {
