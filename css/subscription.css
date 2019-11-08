@@ -49,3 +49,7 @@ select {
 .header {
   margin: 0 !important;
 }
+
+body {
+  display: grid;
+}
