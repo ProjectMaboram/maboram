@@ -50,12 +50,7 @@ h1 {
   height: 5vh;
   align-self: flex-end;
 }
-
-a{
-  color: black;
+a {
+  color: white;
 }
 
-button {
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
