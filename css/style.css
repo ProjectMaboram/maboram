@@ -22,6 +22,7 @@ h1 {
   z-index: 100;
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
   color: black;
+  opacity: 1;
 }
 
 .header {
@@ -49,4 +50,5 @@ h1 {
 a {
   color: white;
 }
+
 
