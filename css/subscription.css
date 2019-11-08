@@ -11,7 +11,6 @@ input[type="radio"] {
 }
 
 fieldset {
-  /* width: 50%; */
   border: 1px solid black;
 }
 
@@ -23,7 +22,6 @@ legend {
 }
 
 label {
-  /* width: auto; */
   text-align: center;
 }
 
@@ -52,4 +50,59 @@ select {
 
 body {
   display: grid;
+}
+.preview {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.imgPreview {
+  width: 150px;
+  height: 150px;
+}
+
+.newYork {
+  border-top: 1px solid red;
+  border-left: 1px dashed red;
+  border-bottom: 1px solid red;
+  border-right: 1px dashed red;
+  background: url("../img/NewYork.jpg") 50% 50% no-repeat;
+}
+
+.paris {
+  border-top: 10px dotted green;
+  border-left: 4px dashed green;
+  border-bottom: 10px dotted green;
+  border-right: 4px dashed green;
+  background: url("../img/Paris.jpg") 50% 50% no-repeat;
+}
+
+.stockholm {
+  border-top: 3px double blue;
+  border-left: 3px solid blue;
+  border-bottom: 3px double blue;
+  border-right: 3px solid blue;
+  background: url("../img/Stockholm.jpg") 50% 50% no-repeat;
+
+  /* width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 75px 129.9px 75px;
+  border-color: transparent transparent #007bff transparent; */
+}
+
+.triangle {
+  object-fit: none;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.rectangle {
+  clip-path: none;
+  object-fit: none;
+}
+
+.circle {
+  clip-path: none;
+  object-fit: cover;
+  border-radius: 50%;
 }
