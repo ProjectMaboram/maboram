@@ -11,6 +11,8 @@ $(document).on("click", "#optionShapes input[type=radio]", e => {
   let sLbl = "";
   let sImg = "";
 
+  $(".innertriangle").css("display", "none");
+
   switch (event.target.id) {
     case "rectangle":
       sLbl = "Bredd:";
@@ -30,7 +32,9 @@ $(document).on("click", "#optionShapes input[type=radio]", e => {
     case "triangle":
       sLbl = "Sida:";
       sImg = "frameTriangleTrans.png";
+
       $("#secondMeasure").hide();
+      $(".innertriangle").css("display", "block");
       $("#txtSecondMeasurement").prop("required", false);
       break;
   }
