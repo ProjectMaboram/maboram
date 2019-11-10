@@ -1,6 +1,7 @@
 const body = $('body')
 const formSection = $('#formContact')
 
+
 $(document).on('click', '#submit', () =>{
     const firstName = $('#firstName').val();
     const lastName = $('#lastName').val();
@@ -8,6 +9,7 @@ $(document).on('click', '#submit', () =>{
     const co = $('#co').val();
     const zip = $('#zip').val();
     const city = $('#city').val();
+   
 
     const newInfo = $('<section>')
     newInfo.append(`<p>Förnamn: ${firstName}</p>`)
@@ -25,9 +27,17 @@ function emptyContactForm() {
     $('#contactForm input').val('');
 }
 $(document).ready(function() {
-  $("#submit").click(function() {
-      $("#contactForm").toggle();
-      $("#confirm").toggle();
-      $("#submit").toggle();
-  });
+    $("#submit").click(function () {
+        $("#contactForm").toggle();
+        $("#confirm").toggle();
+        $("#submit").toggle();
+        $("#cancel").toggle();
+    });
 });
+
+$(document).ready(function () {
+    $("#cancel").click(function () {
+        emptyContactForm()
+    })
+});
+

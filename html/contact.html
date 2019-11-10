@@ -35,6 +35,7 @@
     <title>Document</title>
   </head>
   <body>
+     
       <!--NavBar-->
     <nav class="navbar navbar-light fixed-top navbar-expand-lg">
       <img class="logo" src="../img/Logo.png" />
@@ -94,16 +95,19 @@
                 <!--/NavBar-->
 
                 <!--Header-->
+<section class="container-fluid" id="container">
     <section class="contact col-12 d-flex justify-content-center">
       <h2>Kontaktinformation</h2>
     </section>
                 <!--/Header-->
                 <!--ContactForm -->
-    <section id="formContact"></section>
+    
+                
+    <section id="formContact">
     <form class="contact-form" id="contactForm">
       <section class="form-row">
         <section class="form-group">
-          <input id="firstName" type="text" placeholder=" " required />
+          <input id="firstName" type="text" placeholder=" " required/>
           <label for="firstName">Förnamn</label>
         </section>
 
@@ -118,7 +122,7 @@
         </section>
 
         <section class="form-group">
-          <input id="co" type="text" placeholder=" " />
+          <input id="co" type="text" placeholder=" " required />
           <label for="co">C/o</label>
         </section>
 
@@ -132,19 +136,26 @@
           <label for="city">Stad</label>
         </section>
       </section>
-    </form>
-                <!--/ContactForm-->
-                <!--Buttons-->
-    <button type="button" id="submit">Gå vidare</button>
-    <section class="row"><button type="button" id="confirm">Bekräfta</button>
       </section>
+    </form>
+                
+                <!--Buttons-->
+    
+    <section class="row">
+        <button type="button" id="cancel">Avbryt</button>
+        <button type="button" id="submit">Gå vidare</button>
+    </section>
+    <button type="button" id="confirm">Bekräfta</button>
+      
       <!--/Buttons-->
       <!--Footer-->
       <section class="footer col-12 d-flex justify-content-center">
         <p>footer placeholder</p>
     </section>
       <!--/Footer-->
-
+</section>
+    <!--/ContactForm-->
+</body>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -160,5 +171,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-  </body>
+  
 </html>

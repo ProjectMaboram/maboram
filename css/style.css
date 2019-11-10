@@ -1,14 +1,22 @@
 body {
   font-family: "Handlee", cursive;
-  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
   min-height: 100vh;
+  background-image:
+  url(https://s3.amazonaws.com/storage.nm-storage.com/ststephenumc/images/library/design_assets/church_sepia_tone_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+}
+main{
+  margin-right: 15px;
+  display: grid;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 7px;
-  color: rgb(82, 60, 6);
+  color: rgb(150, 117, 35);
   font-family: "Parisienne", cursive;
 }
 
@@ -20,13 +28,14 @@ h1 {
 
 .navbar {
   z-index: 100;
-  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
+ background: linear-gradient(#f9f9f9, whitesmoke);
   color: black;
-  opacity: 1;
+  background-repeat: no-repeat;
+  
 }
 
 .navbar-toggler {
-  color:black;
+  color: black;
 }
 
 .header {
@@ -47,12 +56,29 @@ h1 {
 }
 
 .footer {
-  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
+  background-color: whitesmoke;
   height: 5vh;
   align-self: flex-end;
 }
 a {
-  color: white;
+  color: black;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
