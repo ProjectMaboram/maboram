@@ -52,11 +52,11 @@ body {
   display: grid;
 }
 .preview {
-  width: 150px;
-  height: 150px;
+  /* width: 150px;
+  height: 150px; */
   text-align: center;
   margin-bottom: 2vh;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
 
@@ -71,58 +71,107 @@ body {
 }
 
 .newYork {
-  border-top: 1px solid red;
-  border-left: 1px dashed red;
-  border-bottom: 1px solid red;
-  border-right: 1px dashed red;
-  --bg-Img: url("../img/NewYork.jpg");
+  --border: 2px solid red;
+
+  border-top: 2px solid red;
+  border-left: 2px dashed red;
+  border-bottom: 2px solid red;
+  border-right: 2px dashed red;
+  --bg-Img: url("../img/newyork_bg.jpg");
 }
 
 .paris {
-  border-top: 10px dotted green;
+  --border: 5px dotted green;
+
+  border-top: 5px dotted green;
   border-left: 4px dashed green;
-  border-bottom: 10px dotted green;
+  border-bottom: 5px dotted green;
   border-right: 4px dashed green;
-  --bg-Img: url("../img/Paris.jpg");
+  --bg-Img: url("../img/paris_bg.jpg");
 }
 
 .stockholm {
+  --border: 3px double blue;
+
   border-top: 3px double blue;
   border-left: 3px solid blue;
   border-bottom: 3px double blue;
   border-right: 3px solid blue;
-  --bg-Img: url("../img/Stockholm.jpg");
+  --bg-Img: url("../img/stockholm_bg.jpg");
 }
 
 .triangle {
-  top: -20px;
-  left: -50px;
-  width: 17%;
-
   overflow: hidden;
   position: relative;
-  transform-origin: 0 100%;
-  transform: rotate(45deg);
-  /* padding-bottom = width / sqrt(2) */
-  padding-bottom: 225px; /* 106 */
+  background-image: var(--bg-Img);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-.triangle:before {
-  content: "";
+.innertriangle {
+  display: none;
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.innertriangle:nth-of-type(1) {
+  transform: translate(-29.7%, 0%) rotate(63.4349deg);
+  /* --border: 5px solid green; */
+}
+
+.innertriangle:nth-of-type(2) {
+  transform: rotate(180deg);
+  /* --border: 5px solid red; */
+}
+
+.innertriangle:nth-of-type(3) {
+  transform: translate(16.6%, 26.8%) rotate(-63.4349deg);
+  /* --border: 5px dotted blue; */
+}
+
+.itimg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300%;
+  border-top: var(--border);
+}
+
+/* .triangle:after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+26,56505118
+
+} */
+
+/* .triangle:before {
+  content: "";
+  width: 130%;
+  height: 130%;
+  position: absolute;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
   background-image: var(--bg-Img);
 
   transform-origin: 0 100%;
-  transform: rotate(-45deg);
-}
+  transform: rotate(-45deg) translate(45px, -15px);
+} */
 
 .rectangle {
+  clip-path: none;
   background-image: var(--bg-Img);
 }
 
 .circle {
+  clip-path: none;
   border-radius: 50%;
   background-image: var(--bg-Img);
 }
