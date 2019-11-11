@@ -31,6 +31,7 @@
     <script defer src="../js/storage.js"></script>
     <script defer src="../js/cartManager.js"></script>
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/shopping-cart.js"></script>
 </head>
 
 <body>
@@ -88,8 +89,15 @@
             <!-- /HEADER -->
 
             <section class="row" id="content">
-                <section class="col-12">
-                    
+                <section class="col-6" id="adress">
+                </section>
+                <section class="container col-6" id="cart">
+                    <section id="cart-items"></section>
+                    <section class="row">
+                        <section class="col-12 text-right">
+                            <p id="grand-total"></p>
+                        </section>
+                    </section>
                 </section>
             </section>
         </section>
