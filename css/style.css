@@ -1,12 +1,13 @@
 body {
   font-family: "Handlee", cursive;
-  /* min-height: 100vh; */
   background-image:
-  url(https://s3.amazonaws.com/storage.nm-storage.com/ststephenumc/images/library/design_assets/church_sepia_tone_background.jpg);
+  url(../img/church_sepia_tone_background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: grid;
+  box-sizing: border-box;
 }
+
 main{
   margin-right: 15px;
   display: grid;
@@ -72,22 +73,9 @@ a {
 .navbar-text {
   margin-right: 15px;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+a:hover,
+.a:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+   text-shadow: 2px 2px 8px rgba(34, 33, 33, 0.699);
 }
