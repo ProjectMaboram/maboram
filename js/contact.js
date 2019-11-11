@@ -37,7 +37,6 @@ $(document).ready(function() {
 $(document).ready(function () {
     $("#cancel").click(function () {
       emptyContactForm()
-      
     })
 });
 
