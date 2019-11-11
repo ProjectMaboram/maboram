@@ -6,7 +6,7 @@
   }
   
   #about-page .image>img {
-    margin-top: calc(120px + 5vh);
+    margin-top: 5vh;
     width: 20vmax;
   }
   
@@ -16,6 +16,10 @@
   }
   .footer>p {
     margin:0;
+  }
+
+  .header {
+    margin-top: 10.1vh !important;
   }
 
   @media screen and (max-width: 575px) {

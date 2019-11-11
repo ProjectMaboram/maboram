@@ -42,6 +42,7 @@
     <script src="../js/storage.js" defer></script>
     <script src="../js/cartManager.js" defer></script>
     <script src="../js/subscription.js" defer></script>
+    <script defer src="../js/index.js"></script>
 
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/subscription.css" />
@@ -102,20 +103,29 @@
       </section>
       <a href="shopping-cart.html" class="btn btn-info btn-lg">
         <span class="glyphicon glyphicon-shopping-cart"></span>
-        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-shopping-cart">
+          <span class="badge"></span>
+      </i>
       </a>
     </nav>
     <!-- Navbar ends here  -->
 
     <!-- HEADER -->
+
     <section class="container-fluid">
-      <section class="row justify-content-center align-items-center">
-        <section class="header col-12">
+      <section class="row ">
+        <section
+          class="header col-12 d-flex align-items-center justify-content-center"
+        >
           <h1>Prenumerera mera!</h1>
         </section>
       </section>
     </section>
-    <!-- /HEADER -->
+
+    <!-- <section class="row justify-content-center align-items-center">
+      <section class="header col-12"></section>
+    </section> -->
+    <!-- HEADER -->
 
     <main class="container">
       <section class="row">
@@ -142,7 +152,11 @@
               <section class="form-row justify-content-center flex-nowrap">
                 <section class="form-check form-check-inline flex-column">
                   <label for="NewYork" class="form-check-label">
-                    <img src="../img/NewYork.jpg" />
+                    <img
+                      src="../img/NewYork.jpg"
+                      alt="New York, ett klassiskt tema med stilrena ramar"
+                      title="New York, ett klassiskt tema med stilrena ramar"
+                    />
                   </label>
                   <input
                     type="radio"
@@ -156,7 +170,11 @@
                 </section>
                 <section class="form-check form-check-inline flex-column">
                   <label for="Paris" class="form-check-label">
-                    <img src="../img/Paris.jpg" />
+                    <img
+                      src="../img/Paris.jpg"
+                      alt="Paris, trendiga ramar för den moderna metropoliten"
+                      title="Paris, trendiga ramar för den moderna metropoliten"
+                    />
                   </label>
                   <input
                     type="radio"
@@ -169,7 +187,11 @@
                 </section>
                 <section class="form-check form-check-inline flex-column">
                   <label for="Stockholm" class="form-check-label">
-                    <img src="../img/Stockholm.jpg" />
+                    <img
+                      src="../img/Stockholm.jpg"
+                      alt="Stockholm, känn dig som hemma med detta vårt allra finaste ramverk"
+                      title="Stockholm, känn dig som hemma med detta vårt allra finaste ramverk"
+                    />
                   </label>
                   <input
                     type="radio"
@@ -183,14 +205,14 @@
               </section>
             </fieldset>
           </section>
-          <!-- The first column first row, select theme, enbs here  -->
+          <!-- The first column first row, select theme, ends here  -->
 
           <!-- The second column first row, select interval, starts here  -->
           <section class="col-12 col-sm-2">
             <fieldset class="form-group">
               <legend>Intervall</legend>
               <select id="intervall" class="form-control" required>
-                <option value="" selected>Välj prenumerationsintervall</option>
+                <option value="" selected>Välj intervall</option>
                 <option value="tredje">Var trejde månad</option>
                 <option value="fjärde">Var sjätte månad</option>
                 <option value="årligen">En gång om året</option>
@@ -207,12 +229,16 @@
               <legend>Välj form på ramen</legend>
               <section class="form-row justify-content-center flex-nowrap">
                 <section class="form-check form-check-inline flex-column">
-                  <label for="Rektangel" class="form-check-label">
-                    <img src="../img/frameSquareTrans.png" />
+                  <label for="rectangle" class="form-check-label">
+                    <img
+                      src="../img/frameSquareTrans.png"
+                      alt="Välj vår rekangulära ram för dina standardbilder"
+                      title="Välj vår rekangulära ram för dina standardbilder"
+                    />
                   </label>
                   <input
                     type="radio"
-                    id="Rektangel"
+                    id="rectangle"
                     name="shape"
                     required
                     class="form-check-input"
@@ -220,24 +246,32 @@
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
-                  <label for="Cirkel" class="form-check-label">
-                    <img src="../img/frameRoundTrans.png" />
+                  <label for="circle" class="form-check-label">
+                    <img
+                      src="../img/frameRoundTrans.png"
+                      alt="För en mer marin känsla, välj den runda ramen"
+                      title="För en mer marin känsla, välj den runda ramen"
+                    />
                   </label>
                   <input
                     type="radio"
-                    id="Cirkel"
+                    id="circle"
                     name="shape"
                     required
                     class="form-check-input"
                   />
                 </section>
                 <section class="form-check form-check-inline flex-column">
-                  <label for="Triangel" class="form-check-label">
-                    <img src="../img/frameTriangleTrans.png" />
+                  <label for="triangle" class="form-check-label">
+                    <img
+                      src="../img/frameTriangleTrans.png"
+                      alt="Gör något annorlunda och välj den spännande triangulära ramen"
+                      title="Gör något annorlunda och välj den spännande triangulära ramen"
+                    />
                   </label>
                   <input
                     type="radio"
-                    id="Triangel"
+                    id="triangle"
                     name="shape"
                     required
                     class="form-check-input"
@@ -292,13 +326,34 @@
           <button type="submit" id="next">Nästa!</button>
         </section>
       </form>
+
+      <!-- Förhandsgranskningsbilden börjar här -->
+      <section class="row">
+        <section class="col-12 text-center">
+          <article>
+            <h2>
+              Förhandsgranskning
+            </h2>
+          </article>
+        </section>
+      </section>
+      <section class="row">
+        <section class="col-12 preview">
+          <article class="imgPreview newYork rectangle">
+            <span class="innertriangle"><i class="itimg"></i></span>
+            <span class="innertriangle"><i class="itimg"></i></span>
+            <span class="innertriangle"><i class="itimg"></i></span>
+          </article>
+        </section>
+      </section>
     </main>
+    <!-- Förhandsgranskningsbilden slutar här -->
 
     <!-- FOOTER -->
-    <section class="row">
-      <section class="footer col-12 d-flex justify-content-center">
-        <p>footer placeholder</p>
-      </section>
+    <section
+      class="footer col-12 d-flex align-items-center justify-content-center"
+    >
+      <p>Footer placeholder</p>
     </section>
     <!-- /FOOTER -->
   </body>

@@ -41,90 +41,99 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/shopping-cart.css" />
   </head>
-  <body>
-    <!-- Navbar starts here  -->
-        <nav class="navbar navbar-light fixed-top navbar-expand-lg">
-      <a class="Logo" href="index.html"> <img class="logo" src="../img/Logo.png" /></a>
-      <h1>Maboram</h1>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <section class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"
-              >Hemsida <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Våra produkter</a
-            >
-            <section class="dropdown-menu">
-              <a class="dropdown-item" href="subscription.html"
-                >Prenumeration</a
-              >
-              <a class="dropdown-item" href="design.html"
-                >Designa din egen ram</a
-              >
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Hjälp mig</a>
-            </section>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">Om oss</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          You're framed!
-        </span>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/shopping-cart.css" />
+</head>
+
+<body>
+  <!-- Navbar starts here  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="../img/Logo.png" /> Maboram</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Hemsida <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Våra produkter</a>
+          <section class="dropdown-menu">
+            <a class="dropdown-item" href="subscription.html">Prenumeration</a>
+            <a class="dropdown-item" href="design.html">Designa din egen ram</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Hjälp mig</a>
+          </section>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Om oss</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        You're framed!
+      </span>
+    </section>
+    <a href="shopping-cart.html" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-shopping-cart"></span>
+      <i class="fas fa-shopping-cart">
+        <span class="badge"></span>
+    </i>
+    </a>
+  </nav>
+  <!-- Navbar ends here  -->
+
+    <!-- HEADER -->
+    <section class="container-fluid">
+      <section class="row justify-content-center align-items-center">
+        <section
+          class="header col-12 d-flex align-items-center justify-content-center"
+        >
+          <h1>Din varukorg</h1>
+        </section>
       </section>
-      <a href="shopping-cart.html" class="btn btn-info btn-lg">
-        <span class="glyphicon glyphicon-shopping-cart"></span>
-        <i class="fas fa-shopping-cart"></i>
-      </a>
-    </nav>
-    <!-- Navbar ends here  -->
+    </section>
+    <!-- /HEADER -->
 
     <main class="container">
-      <h1>Din varukorg</h1>
       <section id="cart-items"></section>
+      <section class="row">
+        <section class="col-12 text-right">
+          <p id="grand-total"></p>
+        </section>
+      </section>
     </main>
 
     <!-- Here is the template placeholder. Is used to get a fully populated cart item -->
     <section class="row" id="cart-template">
-      <section class="col-1"><i class="far fa-trash-alt"></i></section>
-      <section class="col-8">
+      <section class="col-1">
+        <i class="far fa-trash-alt btnDelete"></i>
+      </section>
+      <section class="col-7">
         <p id="template-description">Row description......</p>
       </section>
       <section class="col-2">
-        <span><i class="fas fa-minus"></i></span>
+        <span><i class="fas fa-minus btnMinus"></i></span>
         <span id="template-units">Antal</span>
-        <span><i class="fas fa-plus"></i></span>
+        <span><i class="fas fa-plus btnPlus"></i></span>
       </section>
-      <section class="col-1"><p id="template-price">Pris</p></section>
+      <section class="col-1">
+        <p id="template-price">Pris</p>
+      </section>
+      <section class="col-1 text-right">
+        <p id="template-totPrice">Total</p>
+      </section>
     </section>
     <!-- End of template -->
 
     <!-- FOOTER -->
-    <section class="row">
-      <section class="footer col-12 d-flex justify-content-center">
-        <p>footer placeholder</p>
-      </section>
+    <section class="footer col-12 d-flex justify-content-center">
+      <p>footer placeholder</p>
     </section>
     <!-- /FOOTER -->
   </body>

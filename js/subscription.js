@@ -1,33 +1,53 @@
-// $(document).on("click", "#optionThemes input[type=radio]", () => {
-//   console.log("Clicked a theme!");
-// });
+$(document).on("click", "#optionThemes input[type=radio]", e => {
+  $(".imgPreview").removeClass("NewYork");
+  $(".imgPreview").removeClass("Paris");
+  $(".imgPreview").removeClass("Stockholm");
+  $(".imgPreview").addClass(e.target.id);
+});
 
 // Hanterar när man klickar på ramform - ser till att rätt etikett sätts på första måttet
 // och att andra måttet döljs/visas som det ska
 $(document).on("click", "#optionShapes input[type=radio]", e => {
   let sLbl = "";
+  let sImg = "";
+
+  $(".innertriangle").css("display", "none");
+
   switch (event.target.id) {
-    case "Rektangel":
+    case "rectangle":
       sLbl = "Bredd:";
+      sImg = "frameSquareTrans.png";
       $("#secondMeasure").show();
       $("#txtSecondMeasurement").prop("required", true);
 
       break;
 
-    case "Cirkel":
+    case "circle":
       sLbl = "Radie:";
+      sImg = "frameRoundTrans.png";
       $("#secondMeasure").hide();
       $("#txtSecondMeasurement").prop("required", false);
       break;
 
-    case "Triangel":
+    case "triangle":
       sLbl = "Sida:";
+      sImg = "frameTriangleTrans.png";
+
       $("#secondMeasure").hide();
+      $(".innertriangle").css("display", "block");
       $("#txtSecondMeasurement").prop("required", false);
       break;
   }
 
   $(lblFirstMeasurement).text(sLbl);
+
+  // Sätt rätt bild i förhandsgranskningsrutan
+  // $(".imgPreview").attr("src", "../img/" + sImg);
+
+  $(".imgPreview").removeClass("rectangle");
+  $(".imgPreview").removeClass("circle");
+  $(".imgPreview").removeClass("triangle");
+  $(".imgPreview").addClass(event.target.id);
 });
 
 // Hanterar Nästa-knappen
@@ -44,7 +64,7 @@ $(document).on("submit", "#frmPren", e => {
   let price = $("#optionThemes input[type=radio]:checked").attr("price");
 
   switch (sShape) {
-    case "Rektangel":
+    case "rectangle":
       sMsr =
         "B:" +
         $("#txtFirstMeasurement").val() +
@@ -52,11 +72,11 @@ $(document).on("submit", "#frmPren", e => {
         $("#txtSecondMeasurement").val();
       break;
 
-    case "Cirkel":
+    case "circle":
       sMsr = "R:" + $("#txtFirstMeasurement").val();
       break;
 
-    case "Triangel":
+    case "triangle":
       sMsr = "S:" + $("#txtFirstMeasurement").val();
       break;
   }
@@ -70,4 +90,10 @@ $(document).on("submit", "#frmPren", e => {
 
   // Lägg prenumerationen i kundvagnen
   cm.add(item);
+
+  // Hoppa till kontaktformuläret
+  window.location.href = "contact.html";
 });
+// Antal varor utskrivet på kundvagns-ikon
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());

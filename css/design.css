@@ -6,7 +6,7 @@
   }
   
   #design-page .content-row{
-    margin-top: 120px;
+    margin-top: 5vh;
   }
   
   #design-page .instructions>p {
@@ -40,4 +40,12 @@
   
   .footer>p {
     margin:0;
+  }
+
+  #carouselExampleSlidesOnly {
+    width: 100%;
+  }
+
+  .header {
+    margin-top: 10.1vh !important;
   }

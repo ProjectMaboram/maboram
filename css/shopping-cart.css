@@ -10,3 +10,15 @@ h1 {
 #cart-template {
   display: none;
 }
+
+body {
+  display: grid;
+}
+
+.header {
+  margin-top: 10.1vh !important;
+}
+
+i {
+  cursor: pointer;
+}

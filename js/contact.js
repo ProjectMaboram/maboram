@@ -96,3 +96,6 @@ button.addEventListener("click", () => {
   localStorage.setItem("zip", getZip());
   localStorage.setItem("city", getCity());
 });   /* /Localstorage */
+// Antal varor utskrivet på kundvagns-ikon
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());

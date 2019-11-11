@@ -11,7 +11,6 @@ input[type="radio"] {
 }
 
 fieldset {
-  /* width: 50%; */
   border: 1px solid black;
 }
 
@@ -23,7 +22,6 @@ legend {
 }
 
 label {
-  /* width: auto; */
   text-align: center;
 }
 
@@ -48,4 +46,96 @@ select {
 
 .header {
   margin: 0 !important;
+}
+
+.preview {
+  text-align: center;
+  margin-bottom: 2vh;
+  overflow: hidden;
+}
+
+.imgPreview {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.NewYork {
+  --border: 2px solid red;
+
+  border-top: 2px solid red;
+  border-left: 2px dashed red;
+  border-bottom: 2px solid red;
+  border-right: 2px dashed red;
+  --bg-Img: url("../img/newyork_bg.jpg");
+}
+
+.Paris {
+  --border: 5px dotted green;
+
+  border-top: 5px dotted green;
+  border-left: 4px dashed green;
+  border-bottom: 5px dotted green;
+  border-right: 4px dashed green;
+  --bg-Img: url("../img/paris_bg.jpg");
+}
+
+.Stockholm {
+  --border: 3px double blue;
+
+  border-top: 3px double blue;
+  border-left: 3px solid blue;
+  border-bottom: 3px double blue;
+  border-right: 3px solid blue;
+  --bg-Img: url("../img/stockholm_bg.jpg");
+}
+
+.triangle {
+  overflow: hidden;
+  position: relative;
+  background-image: var(--bg-Img);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.innertriangle {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.innertriangle:nth-of-type(1) {
+  transform: translate(-29.7%, 0%) rotate(63.4349deg);
+}
+
+.innertriangle:nth-of-type(2) {
+  transform: rotate(180deg);
+}
+
+.innertriangle:nth-of-type(3) {
+  transform: translate(16.6%, 26.8%) rotate(-63.4349deg);
+}
+
+.itimg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300%;
+  border-top: var(--border);
+}
+
+.rectangle {
+  clip-path: none;
+  background-image: var(--bg-Img);
+}
+
+.circle {
+  clip-path: none;
+  border-radius: 50%;
+  background-image: var(--bg-Img);
 }
