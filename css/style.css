@@ -64,7 +64,6 @@ h1 {
 .footer {
 
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
-  height: 100%;
   align-self: flex-end;
 }
 a {
