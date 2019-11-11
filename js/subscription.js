@@ -94,3 +94,6 @@ $(document).on("submit", "#frmPren", e => {
   // Hoppa till kontaktformuläret
   window.location.href = "contact.html";
 });
+// Antal varor utskrivet på kundvagns-ikon
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());
