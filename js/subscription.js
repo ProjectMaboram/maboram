@@ -41,9 +41,6 @@ $(document).on("click", "#optionShapes input[type=radio]", e => {
 
   $(lblFirstMeasurement).text(sLbl);
 
-  // Sätt rätt bild i förhandsgranskningsrutan
-  // $(".imgPreview").attr("src", "../img/" + sImg);
-
   $(".imgPreview").removeClass("rectangle");
   $(".imgPreview").removeClass("circle");
   $(".imgPreview").removeClass("triangle");
@@ -91,6 +88,6 @@ $(document).on("submit", "#frmPren", e => {
   // Lägg prenumerationen i kundvagnen
   cm.add(item);
 
-  // Hoppa till kontaktformuläret
-  window.location.href = "contact.html";
+  // Hoppa till kundvagnen
+  window.location.href = "shopping-cart.html";
 });

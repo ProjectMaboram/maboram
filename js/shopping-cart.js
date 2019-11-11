@@ -1,4 +1,4 @@
-function addRow(cartItem, index) {
+function addRow(cartItem) {
   // Hämta ett färdigbyggt template-objekt från HTML-filen
   let $newItem = $("#cart-template").clone(true, true);
 
@@ -11,7 +11,7 @@ function addRow(cartItem, index) {
     .find("#template-totPrice")
     .html(cartItem.units * cartItem.pricePerUnit);
 
-  $newItem.attr("parentId", index);
+  $newItem.attr("parentId", cartItem.id);
 
   // We don't want multiple elements with the same id,
   // so remove them for the new item
@@ -20,10 +20,10 @@ function addRow(cartItem, index) {
   $newItem.find("#template-price").removeAttr("id");
 
   // Change the id to unit plus item id
-  $newItem.find("#template-units").attr("id", "unit" + index);
+  $newItem.find("#template-units").attr("id", "unit" + cartItem.id);
 
   // Change the id to totPrice + item id
-  $newItem.find("#template-totPrice").attr("id", "totPrice" + index);
+  $newItem.find("#template-totPrice").attr("id", "totPrice" + cartItem.id);
 
   $("#cart-items").append($newItem);
 }
@@ -31,9 +31,9 @@ function addRow(cartItem, index) {
 const cm = new CartManager();
 let gt = 0;
 
-cm.items.forEach((item, index) => {
+cm.items.forEach(item => {
   gt += item.units * item.pricePerUnit;
-  addRow(item, index);
+  addRow(item);
 });
 
 $("#grand-total").text(gt);
@@ -58,9 +58,7 @@ $(".btnDelete").on("click", function(e) {
 
 $(".btnPlus").on("click", function(e) {
   let pId = $(e.target)
-    .parent()
-    .parent()
-    .parent()
+    .closest("[parentId]")
     .attr("parentId");
 
   let item = cm.get(pId);
@@ -90,4 +88,9 @@ $(".btnMinus").on("click", function(e) {
     gt -= item.pricePerUnit;
     $("#grand-total").text(gt);
   }
+});
+
+$("#btnCheckout").on("click", function(e) {
+  // Hoppa till kontaktformuläret
+  window.location.href = "contact.html";
 });
