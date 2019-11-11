@@ -66,6 +66,12 @@ a {
 .navbar-text {
   margin-right: 15px;
 }
+a:hover,
+.a:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+   text-shadow: 2px 2px 8px rgba(34, 33, 33, 0.699);
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
