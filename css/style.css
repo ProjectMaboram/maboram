@@ -55,9 +55,14 @@ h1 {
   text-align: center;
 }
 
+#footer-text{
+  margin-top: 40px;
+}
+
 .footer {
-  background-color: whitesmoke;
-  height: 5vh;
+
+  background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
+  height: 100%;
   align-self: flex-end;
 }
 a {
