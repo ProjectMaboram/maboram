@@ -38,19 +38,23 @@
     <script defer src="../js/index.js"></script>
     <script defer src="../js/shopping-cart.js"></script>
 
-    <link rel="stylesheet" href="../css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/design.css">
+    <script defer src="../js/storage.js"></script>
+    <script defer src="../js/cartManager.js"></script>
+    <script defer src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/shopping-cart.css" />
   </head>
 
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/shopping-cart.css" />
-</head>
 
 <body>
   <!-- Navbar starts here  -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img class="logo" src="../img/Logo.png" /> Maboram</a>
+  <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+            <img class="logo" src="../img/Logo.png" />
+            <h1>Maboram</h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -103,9 +107,14 @@
     <main class="container">
       <section id="cart-items"></section>
       <section class="row">
-        <section class="col-12 text-right">
-          <p id="grand-total"></p>
+        <section
+          class="col-4 col-md-12 offset-md-0 offset-6 text-right border-top pt-2"
+        >
+          <p class="font-weight-bold" id="grand-total"></p>
         </section>
+      </section>
+      <section class="row justify-content-end">
+        <button id="btnCheckout">Till kassan</button>
       </section>
     </main>
 
@@ -114,10 +123,10 @@
       <section class="col-1">
         <i class="far fa-trash-alt btnDelete"></i>
       </section>
-      <section class="col-7">
+      <section class="col-8 col-md-7">
         <p id="template-description">Row description......</p>
       </section>
-      <section class="col-2">
+      <section class="col-3 offset-2 col-md-2 offset-md-0">
         <span><i class="fas fa-minus btnMinus"></i></span>
         <span id="template-units">Antal</span>
         <span><i class="fas fa-plus btnPlus"></i></span>
@@ -125,8 +134,8 @@
       <section class="col-1">
         <p id="template-price">Pris</p>
       </section>
-      <section class="col-1 text-right">
-        <p id="template-totPrice">Total</p>
+      <section class="col-4 col-md-1 text-right">
+        <p class="font-weight-bold" id="template-totPrice">Total</p>
       </section>
     </section>
     <!-- End of template -->

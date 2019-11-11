@@ -3,6 +3,9 @@ class CartItem {
     this.description = desc;
     this.units = units;
     this.pricePerUnit = ppu;
+    this.id = CartItem.uniqueId++;
+    localStorage.setItem("uniqueId", CartItem.uniqueId);
+    console.log("Id: ", this.id);
   }
 }
 
@@ -34,13 +37,15 @@ class CartManager {
 
   updateItem(itemNr, item) {
     this.update();
-    this.items[itemNr] = item;
+    const idx = cm.items.findIndex(item => item.id == itemNr);
+    this.items[idx] = item;
     this.save();
   }
 
   removeItem(itemNr) {
     this.update();
-    this.items.splice(itemNr, 1);
+    const idx = cm.items.findIndex(item => item.id == itemNr);
+    this.items.splice(idx, 1);
     this.save();
   }
 
@@ -51,7 +56,10 @@ class CartManager {
    */
   get(itemNr) {
     this.update();
-    return this.items[itemNr];
+    return this.items.find(item => item.id == itemNr);
+
+    // cm.items.find(item => item.units == 6)
+    // cm.items.findIndex(item => item.units == 6)
   }
 
   getNumberOfItems() {
@@ -59,3 +67,5 @@ class CartManager {
     return this.items.length;
   }
 }
+
+CartItem.uniqueId = Number(localStorage.getItem("uniqueId") || 0);
