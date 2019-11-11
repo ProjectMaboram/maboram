@@ -75,6 +75,7 @@ p {
 body {
 	display: grid;
 }
+
 #cancel {
 	margin-left: 50%;
 	width: 80px;
