@@ -23,3 +23,10 @@ const cm = new CartManager();
 cm.items.forEach((item, index) => {
   addRow(item, index);
 });
+
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());
+
+// Antal varor utskrivet på kundvagns-ikon
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());

@@ -31,3 +31,7 @@ $(document).ready(function() {
       $("#submit").toggle();
   });
 });
+
+// Antal varor utskrivet på kundvagns-ikon
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());

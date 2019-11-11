@@ -91,3 +91,6 @@ $(document).on("submit", "#frmPren", e => {
   // Lägg prenumerationen i kundvagnen
   cm.add(item);
 });
+// Antal varor utskrivet på kundvagns-ikon
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());
