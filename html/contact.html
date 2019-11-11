@@ -4,66 +4,84 @@
 <!--/FontStyle Other-->
 <script src="https://kit.fontawesome.com/7174decb7e.js" crossorigin="anonymous"></script>
 
-<title>Document</title>
-</head>
-
-<body>
-  <!--NavBar-->
-  <nav class="navbar fixed-top navbar-expand-lg">
-    <img class="logo" src="../img/Logo.png" />
-    <h1>Maboram</h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <section class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Hemsida <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-            aria-expanded="false">Våra produkter</a>
-          <section class="dropdown-menu">
-            <a class="dropdown-item" href="subscription.html">Prenumeration</a>
-            <a class="dropdown-item" href="design.html">Designa din egen ram</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Hjälp mig</a>
-          </section>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Om oss</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        You're framed!
-      </span>
-    </section>
-    <a href="shopping-cart.html" class="btn btn-info btn-lg">
-      <span class="glyphicon glyphicon-shopping-cart"></span>
-      <i class="fas fa-shopping-cart">
-        <span class="badge"></span>
+    <title>Document</title>
+  </head>
+  <body>
+     
+      <!--NavBar-->
+    <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+      <a class="Logo" href="index.html"> <img class="logo" src="../img/Logo.png" /></a>
+      <h1>Maboram</h1>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Hemsida <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Våra produkter</a
+            >
+            <section class="dropdown-menu">
+              <a class="dropdown-item" href="subscription.html"
+                >Prenumeration</a
+              >
+              <a class="dropdown-item" href="design.html"
+                >Designa din egen ram</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Hjälp mig</a>
+            </section>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Om oss</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          You're framed!
+        </span>
+      </section>
+      <a href="shopping-cart.html" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        <i class="fas fa-shopping-cart">
+          <span class="badge"></span>
       </i>
     </a>
   </nav>
   <!--/NavBar-->
 
-    <!--Header-->
-    <!-- HEADER -->
-    <section class="row justify-content-center align-items-center">
-      <section class="header col-12 d-flex align-items-center justify-content-center">
-        <h1>Maboram</h1>
-      </section>
+                <!--Header-->
+<section class="container-fluid" id="container">
+    <section class="contact col-12 d-flex justify-content-center">
+      <h2>Kontaktinformation</h2>
     </section>
-    <!-- /HEADER -->
-    <!--/Header-->
-    <!--ContactForm -->
-    <section id="formContact"></section>
+                <!--/Header-->
+                <!--ContactForm -->
+    
+                
+    <section id="formContact">
     <form class="contact-form" id="contactForm">
       <section class="form-row">
         <section class="form-group">
-          <input id="firstName" type="text" placeholder=" " required />
+          <input id="firstName" type="text" placeholder=" " required/>
           <label for="firstName">Förnamn</label>
         </section>
 
@@ -78,7 +96,7 @@
         </section>
 
         <section class="form-group">
-          <input id="co" type="text" placeholder=" " />
+          <input id="co" type="text" placeholder=" " required />
           <label for="co">C/o</label>
         </section>
 
@@ -92,20 +110,28 @@
           <label for="city">Stad</label>
         </section>
       </section>
+      </section>
     </form>
+                
+                <!--Buttons-->
+    
+    <section class="row">
+        <button type="button" id="cancel">Avbryt</button>
+        <button type="button" id="submit">Gå vidare</button>
+    </section>
+    <button type="button" id="confirm">Bekräfta</button>
+      
+      <!--/Buttons-->
+      <!--Footer-->
+      <section class="footer col-12 d-flex justify-content-center">
+        <p>footer placeholder</p>
+    </section>
+      <!--/Footer-->
+</section>
     <!--/ContactForm-->
-    <!--Buttons-->
-    <button type="button" id="submit">Gå vidare</button>
-    <section class="row"><button type="button" id="confirm">Bekräfta</button>
-    </section>
-    <!--/Buttons-->
-    <!--Footer-->
-    <section class="footer col-12 d-flex justify-content-center">
-      <p>footer placeholder</p>
-    </section>
-    <!--/Footer-->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -113,7 +139,7 @@
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-  </body>
-
+      crossorigin="anonymous"
+    ></script>
+  
 </html>
