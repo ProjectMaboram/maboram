@@ -28,6 +28,8 @@
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script defer src="../js/storage.js"></script>
+    <script defer src="../js/cartManager.js"></script>
     <script defer src="../js/index.js"></script>
 </head>
 
@@ -37,8 +39,8 @@
 
         <!-- NAVBAR -->
 
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <img class="logo" src="../img/Logo.png" />
+        <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+            <a class="Logo" href="index.html"> <img class="logo" src="../img/Logo.png" /></a>
             <h1>Maboram</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +72,9 @@
             </section>
             <a href="shopping-cart.html" class="btn btn-info btn-lg">
                 <span class="glyphicon glyphicon-shopping-cart"></span>
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">
+                    <span class="badge"></span>
+                </i>
             </a>
         </nav>
 
@@ -118,8 +122,8 @@
                         Aldrig mer ska du behöva känna att du har halkat efter gällande det senaste i design. Välj
                         mellan att få det senaste inom ramvärlden var tredje, sjätte eller en gång om året.
                         Där nya ramar skickas till din bostad utan klydd!
-                    </p>
-                </section>
+                    </p1>
+                
             </section>
 
             <!-- CONTENT -->
@@ -128,9 +132,31 @@
 
         <!-- FOOTER -->
 
-        <section class="footer d-flex justify-content-center">
-            <p>footer placeholder</p>
+        <section class="footer">
+      
+      <section id="footer-text" class="container">
+        <section class="row">
+          <section class="col-sm-3">
+            <h5>Kom igång</h5>
+            <ul>
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="subscription.html">Prenumeration</a></li>
+              <li><a href="about.html">Företagets Historia</a></li>
+            </ul>
+          </section>
+            <section class="col-sm-3">
+              <h5>Kontakta oss</h5>
+              <ul>
+                <li> Maboram</li>
+                <li> Barkgatan 214 22 Malmö</li>
+                <li> Telefonnummer 040-420420</li>
+                <li> Mån-Fre 09:00-16:00</li>
+              </ul>
+            </section>
         </section>
+      </section>
+    
+    </section>
 
         <!-- /FOOTER -->
 

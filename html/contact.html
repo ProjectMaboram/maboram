@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/contact.css" />
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script defer src="../js/index.js"></script>
     <script defer src="../js/contact.js"></script>
+    <script defer src="../js/storage.js"></script>
+    <script defer src="../js/cartManager.js"></script>
+    <script defer src="../js/index.js"></script>
     <!--Fontstyle Logo-->
     <link
       href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
@@ -35,9 +37,10 @@
     <title>Document</title>
   </head>
   <body>
+     
       <!--NavBar-->
-    <nav class="navbar fixed-top navbar-expand-lg">
-      <img class="logo" src="../img/Logo.png" />
+    <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+      <a class="Logo" href="index.html"> <img class="logo" src="../img/Logo.png" /></a>
       <h1>Maboram</h1>
       <button
         class="navbar-toggler"
@@ -88,22 +91,27 @@
       </section>
       <a href="shopping-cart.html" class="btn btn-info btn-lg">
         <span class="glyphicon glyphicon-shopping-cart"></span>
-        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-shopping-cart">
+          <span class="badge"></span>
+      </i>
       </a>
     </nav>
                 <!--/NavBar-->
 
                 <!--Header-->
+<section class="container-fluid" id="container">
     <section class="contact col-12 d-flex justify-content-center">
       <h2>Kontaktinformation</h2>
     </section>
                 <!--/Header-->
                 <!--ContactForm -->
-    <section id="formContact"></section>
+    
+                
+    <section id="formContact">
     <form class="contact-form" id="contactForm">
       <section class="form-row">
         <section class="form-group">
-          <input id="firstName" type="text" placeholder=" " required />
+          <input id="firstName" type="text" placeholder=" " required/>
           <label for="firstName">Förnamn</label>
         </section>
 
@@ -118,7 +126,7 @@
         </section>
 
         <section class="form-group">
-          <input id="co" type="text" placeholder=" " />
+          <input id="co" type="text" placeholder=" " required />
           <label for="co">C/o</label>
         </section>
 
@@ -132,19 +140,48 @@
           <label for="city">Stad</label>
         </section>
       </section>
-    </form>
-                <!--/ContactForm-->
-                <!--Buttons-->
-    <button type="button" id="submit">Gå vidare</button>
-    <section class="row"><button type="button" id="confirm">Bekräfta</button>
       </section>
+    </form>
+                
+                <!--Buttons-->
+    
+    <section class="row">
+        <button type="button" id="cancel">Avbryt</button>
+        <button type="button" id="submit">Gå vidare</button>
+    </section>
+    <button type="button" id="confirm">Bekräfta</button>
+      
       <!--/Buttons-->
       <!--Footer-->
-      <section class="footer col-12 d-flex justify-content-center">
-        <p>footer placeholder</p>
+      <section class="footer">
+      
+      <section id="footer-text" class="container">
+        <section class="row">
+          <section class="col-sm-3">
+            <h5>Kom igång</h5>
+            <ul>
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="subscription.html">Prenumeration</a></li>
+              <li><a href="about.html">Företagets Historia</a></li>
+            </ul>
+          </section>
+            <section class="col-sm-3">
+              <h5>Kontakta oss</h5>
+              <ul>
+                <li> Maboram</li>
+                <li> Barkgatan 214 22 Malmö</li>
+                <li> Telefonnummer 040-420420</li>
+                <li> Mån-Fre 09:00-16:00</li>
+              </ul>
+            </section>
+        </section>
+      </section>
+    
     </section>
       <!--/Footer-->
-
+</section>
+    <!--/ContactForm-->
+</body>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -160,5 +197,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-  </body>
+  
 </html>

@@ -1,4 +1,7 @@
-#index-page {
+body{
+    display: grid;
+}
+    #index-page {
     display: grid;
     position: relative;
     min-height: 100vh;
@@ -23,7 +26,25 @@
 #index-page #content-row>section>p {
     padding-left: 5%;
 }
-
+h1 {
+    font-size: 25px;
+}
+.col-12 {
+    justify-content: center;
+}
+p{
+    text-justify: center;
+}
+@media only screen and (max-width: 600px) {
+  p1 {
+      justify-content: center;
+    width: 315px;
+  height: 100px;
+  overflow: auto;
+  text-align: center;
+  margin-left: 25px;
+  }
+}
 .header {
     margin-top: 10.1vh !important;
 }

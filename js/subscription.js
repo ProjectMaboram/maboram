@@ -91,3 +91,6 @@ $(document).on("submit", "#frmPren", e => {
   // Hoppa till kundvagnen
   window.location.href = "shopping-cart.html";
 });
+// Antal varor utskrivet på kundvagns-ikon
+const cartManager = new CartManager();
+$(".badge").text(cartManager.getNumberOfItems());
