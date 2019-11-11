@@ -1,6 +1,6 @@
 const body = $("body");
 const formSection = $("#formContact");
-
+const storage = new LocalStorage();
 $(document).on("click", "#submit", () => {
   const firstName = $("#firstName").val();
   const lastName = $("#lastName").val();
@@ -66,9 +66,9 @@ function getCity() {
   return input.value;
 }
 function loadNames() {
-  const { firstname, lastname, address, co, zip, city } = localStorage.getItem(
-    "user"
-  );
+  const details = JSON.parse(storage.get("user"));
+  console.log(details);
+  const { firstname, lastname, address, co, zip, city } = details;
 
   document.querySelector("#firstName").value = firstname;
   document.querySelector("#lastName").value = lastname;
@@ -78,7 +78,9 @@ function loadNames() {
   document.querySelector("#city").value = city;
 }
 
-loadNames();
+if (storage.has("user")) {
+  loadNames();
+}
 
 const button = document.querySelector("#submit");
 
@@ -91,8 +93,6 @@ button.addEventListener("click", () => {
     zip: getZip(),
     city: getCity()
   };
-  localStorage.setItem("user", details);
+  storage.set("user", details);
 }); /* /Localstorage */
 // Antal varor utskrivet på kundvagns-ikon
-const cartManager = new CartManager();
-$(".badge").text(cartManager.getNumberOfItems());
