@@ -64,7 +64,7 @@ select {
   background-position: center center;
 }
 
-.newYork {
+.NewYork {
   --border: 2px solid red;
 
   border-top: 2px solid red;
@@ -74,7 +74,7 @@ select {
   --bg-Img: url("../img/newyork_bg.jpg");
 }
 
-.paris {
+.Paris {
   --border: 5px dotted green;
 
   border-top: 5px dotted green;
@@ -84,7 +84,7 @@ select {
   --bg-Img: url("../img/paris_bg.jpg");
 }
 
-.stockholm {
+.Stockholm {
   --border: 3px double blue;
 
   border-top: 3px double blue;
