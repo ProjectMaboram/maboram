@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Varukorg</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Varukorg</title>
+    <!-- Imports -->
+    <script
+      src="https://kit.fontawesome.com/7174decb7e.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Imports -->
-  <script src="https://kit.fontawesome.com/7174decb7e.js" crossorigin="anonymous"></script>
+    <!-- jQuery and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- jQuery and Popper.js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS and JS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap CSS and JS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/storage.js"></script>
+    <script defer src="../js/cartManager.js"></script>
+    <script defer src="../js/shopping-cart.js"></script>
 
-  <script defer src="../js/index.js"></script>
-  <script defer src="../js/storage.js"></script>
-  <script defer src="../js/cartManager.js"></script>
-  <script defer src="../js/shopping-cart.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shopping-cart.css" />
+  </head>
 
 
   <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet" />
@@ -75,42 +89,53 @@
   </nav>
   <!-- Navbar ends here  -->
 
-  <!-- HEADER -->
-  <section class="container-fluid">
-    <section class="row justify-content-center align-items-center">
-      <section class="header col-12 d-flex align-items-center justify-content-center">
-        <h1>Din varukorg</h1>
+    <!-- HEADER -->
+    <section class="container-fluid">
+      <section class="row justify-content-center align-items-center">
+        <section
+          class="header col-12 d-flex align-items-center justify-content-center"
+        >
+          <h1>Din varukorg</h1>
+        </section>
       </section>
     </section>
-  </section>
-  <!-- /HEADER -->
+    <!-- /HEADER -->
 
-  <main class="container">
-    <section id="cart-items"></section>
-  </main>
+    <main class="container">
+      <section id="cart-items"></section>
+      <section class="row">
+        <section class="col-12 text-right">
+          <p id="grand-total"></p>
+        </section>
+      </section>
+    </main>
 
-  <!-- Here is the template placeholder. Is used to get a fully populated cart item -->
-  <section class="row" id="cart-template">
-    <section class="col-1"><i class="far fa-trash-alt"></i></section>
-    <section class="col-8">
-      <p id="template-description">Row description......</p>
+    <!-- Here is the template placeholder. Is used to get a fully populated cart item -->
+    <section class="row" id="cart-template">
+      <section class="col-1">
+        <i class="far fa-trash-alt btnDelete"></i>
+      </section>
+      <section class="col-7">
+        <p id="template-description">Row description......</p>
+      </section>
+      <section class="col-2">
+        <span><i class="fas fa-minus btnMinus"></i></span>
+        <span id="template-units">Antal</span>
+        <span><i class="fas fa-plus btnPlus"></i></span>
+      </section>
+      <section class="col-1">
+        <p id="template-price">Pris</p>
+      </section>
+      <section class="col-1 text-right">
+        <p id="template-totPrice">Total</p>
+      </section>
     </section>
-    <section class="col-2">
-      <span><i class="fas fa-minus"></i></span>
-      <span id="template-units">Antal</span>
-      <span><i class="fas fa-plus"></i></span>
-    </section>
-    <section class="col-1">
-      <p id="template-price">Pris</p>
-    </section>
-  </section>
-  <!-- End of template -->
+    <!-- End of template -->
 
-  <!-- FOOTER -->
-  <section class="footer col-12 d-flex justify-content-center">
-    <p>footer placeholder</p>
-  </section>
-  <!-- /FOOTER -->
-</body>
-
+    <!-- FOOTER -->
+    <section class="footer col-12 d-flex justify-content-center">
+      <p>footer placeholder</p>
+    </section>
+    <!-- /FOOTER -->
+  </body>
 </html>
