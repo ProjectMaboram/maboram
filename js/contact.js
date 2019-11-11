@@ -33,7 +33,7 @@ $(document).ready(function() {
         $("#cancel").toggle();
     });
 });
-
+/* Localstorage */
 $(document).ready(function () {
     $("#cancel").click(function () {
         emptyContactForm()
@@ -92,4 +92,4 @@ button.addEventListener("click", () => {
   localStorage.setItem("co", getCo());
   localStorage.setItem("zip", getZip());
   localStorage.setItem("city", getCity());
-});
+});   /* /Localstorage */
