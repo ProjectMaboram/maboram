@@ -83,14 +83,40 @@
         <h1>Din varukorg</h1>
       </section>
     </section>
-  </section>
-  <!-- /HEADER -->
+    <!-- /HEADER -->
 
-  <main class="container">
-    <section id="cart-items"></section>
-    <section class="row">
-      <section class="col-12 text-right">
-        <p id="grand-total"></p>
+    <main class="container">
+      <section id="cart-items"></section>
+      <section class="row">
+        <section
+          class="col-4 col-md-12 offset-md-0 offset-6 text-right border-top pt-2"
+        >
+          <p class="font-weight-bold" id="grand-total"></p>
+        </section>
+      </section>
+      <section class="row justify-content-end">
+        <button id="btnCheckout">Till kassan</button>
+      </section>
+    </main>
+
+    <!-- Here is the template placeholder. Is used to get a fully populated cart item -->
+    <section class="row" id="cart-template">
+      <section class="col-1">
+        <i class="far fa-trash-alt btnDelete"></i>
+      </section>
+      <section class="col-8 col-md-7">
+        <p id="template-description">Row description......</p>
+      </section>
+      <section class="col-3 offset-2 col-md-2 offset-md-0">
+        <span><i class="fas fa-minus btnMinus"></i></span>
+        <span id="template-units">Antal</span>
+        <span><i class="fas fa-plus btnPlus"></i></span>
+      </section>
+      <section class="col-1">
+        <p id="template-price">Pris</p>
+      </section>
+      <section class="col-4 col-md-1 text-right">
+        <p class="font-weight-bold" id="template-totPrice">Total</p>
       </section>
     </section>
   </main>
