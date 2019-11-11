@@ -1,167 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Maboram</title>
 
     <!-- Imports -->
-    <script src="https://kit.fontawesome.com/7174decb7e.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/7174decb7e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- jQuery and Popper.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap CSS and JS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <script defer src="../js/storage.js"></script>
     <script defer src="../js/cartManager.js"></script>
     <script defer src="../js/index.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <section id="index-page">
+      <!-- NAVBAR -->
 
-        <!-- NAVBAR -->
+      <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+        <a class="Logo" href="index.html">
+          <img class="logo" src="../img/Logo.png"
+        /></a>
+        <h1>Maboram</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Hemsida <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Våra produkter</a
+              >
+              <section class="dropdown-menu">
+                <a class="dropdown-item" href="subscription.html"
+                  >Prenumeration</a
+                >
+                <a class="dropdown-item" href="design.html"
+                  >Designa din egen ram</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Hjälp mig</a>
+              </section>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Om oss</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            You're framed!
+          </span>
+        </section>
+        <a href="shopping-cart.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+          <i class="fas fa-shopping-cart">
+            <span class="badge"></span>
+          </i>
+        </a>
+      </nav>
 
-        <nav class="navbar navbar-light fixed-top navbar-expand-lg">
-            <a class="Logo" href="index.html"> <img class="logo" src="../img/Logo.png" /></a>
+      <!-- /NAVBAR -->
+
+      <section class="container-fluid" id="container">
+        <!-- HEADER -->
+        <section class="row justify-content-center align-items-center">
+          <section
+            class="header col-12 d-flex align-items-center justify-content-center"
+          >
             <h1>Maboram</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <section class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Hemsida <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Våra produkter</a>
-                        <section class="dropdown-menu">
-                            <a class="dropdown-item" href="subscription.html">Prenumeration</a>
-                            <a class="dropdown-item" href="design.html">Designa din egen ram</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Hjälp mig</a>
-                        </section>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Om oss</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                    You're framed!
-                </span>
-            </section>
-            <a href="shopping-cart.html" class="btn btn-info btn-lg">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-                <i class="fas fa-shopping-cart">
-                    <span class="badge"></span>
-                </i>
-            </a>
-        </nav>
+          </section>
+        </section>
+        <!-- /HEADER -->
 
-        <!-- /NAVBAR -->
+        <!-- CONTENT -->
 
-        <section class="container-fluid" id="container">
+        <section class="row" id="content-row">
+          <section class="col-12 d-flex flex-row align-items-center">
+            <img
+              src="https://www.slojd-detaljer.se/content/pim/productimages/4854_01.jpg?width=250&height=250&pad=true"
+            /></section>
+            <section>
+            <p
+              >Vår unika ramstruktur tillsammans med vår alldeles egna
+              patenterade magnet-clip. Att beställa hem ramar efter din
+              personliga design har aldrig varit enklare Slipp extra
+              fraktavgifter med stora paket och få hem små paket direkt i
+              brevlådan! Tack vare vår unika magnet-clip design blir paketen
+              minimala och upplevelsen ännu roligare! Delarna låses enkelt fast
+              med hjälp av magneter och går enkelt att plocka ner och förvara om
+              man blir sugen på något annat (kolla in vår prenumerationtjänst!)
+              Clip & Go!</p
+            >
+          </section>
 
-            <!-- HEADER -->
-            <section class="row justify-content-center align-items-center">
-                <section class="header col-12 d-flex align-items-center justify-content-center">
-                    <h1>Maboram</h1>
-                </section>
-            </section>
-            <!-- /HEADER -->
+          <section class="col-12 d-flex flex-row align-items-center">
+            <img
+              src="https://scontent-lga3-1.cdninstagram.com/vp/67e84f2ab2119531ea53b9a0fa5216cf/5E2EED3B/t51.2885-15/sh0.08/e35/s640x640/50317122_552285435278702_1694019635097555812_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=102"
+            />
+          </section>
+            <section>
+            <p
+              >Alla har vi alltid egna preferenser gällande former. Kanske är du
+              mer en rektangel i personlighet? Eller kanske en rund och go
+              cirkel framåt helgen där du vill kunna representera din runda
+              godis-mage med en passande rund ram? Vi har allt och lite till för
+              att du skall kunna designa din snyggaste tavla någonsin.
+            </p>
+          </section>
 
-            <!-- CONTENT -->
+          <section class="col-12 d-flex flex-row align-items-center">
+            <img
+              src="https://c-static.smartphoto.com/structured/repositoryimage/productcategory/nonphoto_finishing/frames_2on3_small/topimages/0003/image/carrousel2.jpg"
+            />
+          </section>
+          <section>
+          <p
+              >I ett ständigt utvecklande samhälle, där allt uppdateras så fort
+              man vänder ryggen till, har vi utvecklat en prenumerationstjänst
+              för våra kunder. Aldrig mer ska du behöva känna att du har halkat
+              efter gällande det senaste i design. Välj mellan att få det
+              senaste inom ramvärlden var tredje, sjätte eller en gång om året.
+              Där nya ramar skickas till din bostad utan klydd!
+            </p>
+          </section>
 
-            <section class="row" id="content-row">
-                <section class="col-12 d-flex flex-row align-items-center">
-                    <img
-                        src="https://www.slojd-detaljer.se/content/pim/productimages/4854_01.jpg?width=250&height=250&pad=true">
-                    <p1>Vår unika ramstruktur tillsammans med vår alldeles egna patenterade magnet-clip. Att beställa hem
-                        ramar efter din personliga design har aldrig varit enklare
-                        Slipp extra fraktavgifter med stora paket och få hem små paket direkt i brevlådan! Tack vare vår
-                        unika magnet-clip design blir paketen minimala och upplevelsen ännu roligare!
-                        Delarna låses enkelt fast med hjälp av magneter och går enkelt att plocka ner och förvara om man
-                        blir sugen på något annat (kolla in vår prenumerationtjänst!)
-                        Clip & Go!</p1>
-                </section>
-
-                <section class="col-12 d-flex flex-row align-items-center">
-                    <img
-                        src="https://scontent-lga3-1.cdninstagram.com/vp/67e84f2ab2119531ea53b9a0fa5216cf/5E2EED3B/t51.2885-15/sh0.08/e35/s640x640/50317122_552285435278702_1694019635097555812_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=102">
-                    <p1>Alla har vi alltid egna preferenser gällande former. Kanske är du mer en rektangel i
-                        personlighet? Eller kanske en rund och go cirkel framåt helgen där
-                        du vill kunna representera din runda godis-mage med en passande rund ram? Vi har allt och lite
-                        till för att du skall kunna designa din snyggaste tavla någonsin. </p1>
-                </section>
-
-                <section class="col-12 d-flex flex-row align-items-center">
-                    <img
-                        src="https://c-static.smartphoto.com/structured/repositoryimage/productcategory/nonphoto_finishing/frames_2on3_small/topimages/0003/image/carrousel2.jpg">
-                    <p1>I ett ständigt utvecklande samhälle, där allt uppdateras så fort man vänder ryggen till, har vi
-                        utvecklat en prenumerationstjänst för våra kunder.
-                        Aldrig mer ska du behöva känna att du har halkat efter gällande det senaste i design. Välj
-                        mellan att få det senaste inom ramvärlden var tredje, sjätte eller en gång om året.
-                        Där nya ramar skickas till din bostad utan klydd!
-                    </p1>
-                
-            </section>
-
-            <!-- CONTENT -->
-
+          <!-- CONTENT -->
         </section>
 
         <!-- FOOTER -->
 
         <section class="footer">
-      
-      <section id="footer-text" class="container">
-        <section class="row">
-          <section class="col-sm-3">
-            <h5>Kom igång</h5>
-            <ul>
-              <li><a href="index.html">Hem</a></li>
-              <li><a href="subscription.html">Prenumeration</a></li>
-              <li><a href="about.html">Företagets Historia</a></li>
-            </ul>
-          </section>
-            <section class="col-sm-3">
-              <h5>Kontakta oss</h5>
-              <ul>
-                <li> Maboram</li>
-                <li> Barkgatan 214 22 Malmö</li>
-                <li> Telefonnummer 040-420420</li>
-                <li> Mån-Fre 09:00-16:00</li>
-              </ul>
+          <section id="footer-text" class="container">
+            <section class="row">
+              <section class="col-sm-3">
+                <h5>Kom igång</h5>
+                <ul>
+                  <li><a href="index.html">Hem</a></li>
+                  <li><a href="subscription.html">Prenumeration</a></li>
+                  <li><a href="about.html">Företagets Historia</a></li>
+                </ul>
+              </section>
+              <section class="col-sm-3">
+                <h5>Kontakta oss</h5>
+                <ul>
+                  <li>Maboram</li>
+                  <li>Barkgatan 214 22 Malmö</li>
+                  <li>Telefonnummer 040-420420</li>
+                  <li>Mån-Fre 09:00-16:00</li>
+                </ul>
+              </section>
             </section>
+          </section>
         </section>
-      </section>
-    
-    </section>
 
         <!-- /FOOTER -->
-
+      </section>
     </section>
-    </section>
-</body>
-
+  </body>
 </html>
