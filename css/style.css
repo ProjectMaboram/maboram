@@ -33,7 +33,6 @@ h1 {
  background: linear-gradient(#f9f9f9, whitesmoke);
   color: black;
   background-repeat: no-repeat;
-  
 }
 
 .navbar-toggler {
@@ -64,7 +63,6 @@ h1 {
 .footer {
 
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
-  height: 100%;
   align-self: flex-end;
 }
 
