@@ -11,13 +11,9 @@ h1 {
   display: none;
 }
 
-body {
-  display: grid;
-}
-
-.header {
+/* .header {
   margin-top: 10.1vh !important;
-}
+} */
 
 i {
   cursor: pointer;
