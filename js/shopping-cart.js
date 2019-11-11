@@ -49,7 +49,11 @@ $(".btnDelete").on("click", function(e) {
     .parent()
     .remove();
 
+  let item = cm.get(pId);
   cm.removeItem(pId);
+
+  gt -= item.units * item.pricePerUnit;
+  $("#grand-total").text(gt);
 });
 
 $(".btnPlus").on("click", function(e) {
