@@ -1,6 +1,6 @@
 body {
   font-family: "Handlee", cursive;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image:
   url(https://s3.amazonaws.com/storage.nm-storage.com/ststephenumc/images/library/design_assets/church_sepia_tone_background.jpg);
   background-repeat: no-repeat;

@@ -2,6 +2,10 @@
     display: grid;
 }
 
+#cart-template {
+    display: none;
+  }
+
 .header {
     margin-top: 10.2vh;
 }
