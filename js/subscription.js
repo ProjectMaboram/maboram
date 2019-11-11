@@ -1,7 +1,7 @@
 $(document).on("click", "#optionThemes input[type=radio]", e => {
-  $(".imgPreview").removeClass("newYork");
-  $(".imgPreview").removeClass("paris");
-  $(".imgPreview").removeClass("stockholm");
+  $(".imgPreview").removeClass("NewYork");
+  $(".imgPreview").removeClass("Paris");
+  $(".imgPreview").removeClass("Stockholm");
   $(".imgPreview").addClass(e.target.id);
 });
 
@@ -90,6 +90,9 @@ $(document).on("submit", "#frmPren", e => {
 
   // Lägg prenumerationen i kundvagnen
   cm.add(item);
+
+  // Hoppa till kontaktformuläret
+  window.location.href = "contact.html";
 });
 // Antal varor utskrivet på kundvagns-ikon
 const cartManager = new CartManager();
