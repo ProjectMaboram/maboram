@@ -63,6 +63,9 @@ h1 {
 a {
   color: black;
 }
+.navbar-text {
+  margin-right: 15px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }

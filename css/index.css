@@ -41,5 +41,7 @@ p{
     width: 315px;
   height: 100px;
   overflow: auto;
+  text-align: center;
+  margin-left: 25px;
   }
 }

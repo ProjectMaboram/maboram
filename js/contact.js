@@ -33,13 +33,17 @@ $(document).ready(function() {
         $("#cancel").toggle();
     });
 });
-/* Localstorage */
+
 $(document).ready(function () {
     $("#cancel").click(function () {
-        emptyContactForm()
+      emptyContactForm()
+      
     })
 });
 
+
+
+/* Localstorage */
 function getFirstName() {
   const input = document.querySelector("#firstName");
   return input.value;
