@@ -6,6 +6,7 @@ body {
   background-size: 100% 100%;
   display: grid;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 main{
