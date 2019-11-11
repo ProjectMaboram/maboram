@@ -37,8 +37,7 @@ cm.items.forEach((item, index) => {
 });
 
 // Antal varor utskrivet på kundvagns-ikon
-const cartManager = new CartManager();
-$(".badge").text(cartManager.getNumberOfItems());
+$(".badge").text(cm.getNumberOfItems());
 
 $("#grand-total").text(gt);
 
