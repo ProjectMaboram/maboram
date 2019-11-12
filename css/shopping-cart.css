@@ -1,19 +1,10 @@
 main {
-  min-height: 60vh;
-}
-
-h1 {
-  margin: 5vh 0;
-  text-align: center;
+  /*min-height: 60vh;*/
 }
 
 #cart-template {
   display: none;
 }
-
-/* .header {
-  margin-top: 10.1vh !important;
-} */
 
 i {
   cursor: pointer;
