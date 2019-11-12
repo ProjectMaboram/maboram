@@ -33,7 +33,6 @@ main{
  background: linear-gradient(#f9f9f9, whitesmoke);
   color: black;
   background-repeat: no-repeat;
-  
 }
 
 .navbar-toggler {
@@ -42,9 +41,9 @@ main{
 
 .header {
   position: relative;
+
   background: rgba(255,255,255,0.5);
   height: 6vh;
-  
 }
 .custom-toggler.navbar-toggler {
   border-color: rgb(150, 150, 150);
@@ -66,6 +65,7 @@ main{
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
   align-self: flex-end;
 }
+
 a {
   color: black;
 }
