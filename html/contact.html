@@ -46,7 +46,7 @@
             <a class="dropdown-item" href="subscription.html">Prenumeration</a>
             <a class="dropdown-item" href="design.html">Designa din egen ram</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Hjälp mig</a>
+            <a class="dropdown-item" href="https://google.com" target="_blank">Hjälp mig</a>
           </section>
         </li>
         <li class="nav-item">
@@ -65,51 +65,59 @@
   <!--/NavBar-->
 
   <!--Header-->
-  <section class="contact col-12 d-flex justify-content-center">
-    <h2>Kontaktinformation</h2>
+  <section class="container-fluid">
+    <section class="row justify-content-center align-items-center">
+      <section class="header col-12 d-flex align-items-center justify-content-center">
+        <h1>Kontaktinformation</h1>
+      </section>
+    </section>
   </section>
   <!--/Header-->
   <!--ContactForm -->
-  <section id="formContact"></section>
-  <form class="contact-form" id="contactForm">
-    <section class="form-row">
-      <section class="form-group">
-        <input id="firstName" type="text" placeholder=" " required />
-        <label for="firstName">Förnamn</label>
-      </section>
+  <main class="container">
+    <section id="formContact"></section>
+    <form class="contact-form" id="contactForm">
+      <section class="form-row">
+        <section class="form-group">
+          <input id="firstName" type="text" placeholder=" " required />
+          <label for="firstName">Förnamn</label>
+        </section>
 
-      <section class="form-group">
-        <input id="lastName" type="text" placeholder=" " required />
-        <label for="lastName">Efternamn</label>
-      </section>
+        <section class="form-group">
+          <input id="lastName" type="text" placeholder=" " required />
+          <label for="lastName">Efternamn</label>
+        </section>
 
-      <section class="form-group">
-        <input id="address" type="text" placeholder=" " required />
-        <label for="address">Adress</label>
-      </section>
+        <section class="form-group">
+          <input id="address" type="text" placeholder=" " required />
+          <label for="address">Adress</label>
+        </section>
 
-      <section class="form-group">
-        <input id="co" type="text" placeholder=" " />
-        <label for="co">C/o</label>
-      </section>
+        <section class="form-group">
+          <input id="co" type="text" placeholder=" " />
+          <label for="co">C/o</label>
+        </section>
 
-      <section class="form-group">
-        <input id="zip" type="number" placeholder=" " required />
-        <label for="zip">Postnr</label>
-      </section>
+        <section class="form-group">
+          <input id="zip" type="number" placeholder=" " required />
+          <label for="zip">Postnr</label>
+        </section>
 
-      <section class="form-group">
-        <input id="city" type="text" placeholder=" " required />
-        <label for="city">Stad</label>
+        <section class="form-group">
+          <input id="city" type="text" placeholder=" " required />
+          <label for="city">Stad</label>
+        </section>
       </section>
-    </section>
-  </form>
-  <!--/ContactForm-->
-  <!--Buttons-->
-  <button type="button" id="submit">Gå vidare</button>
-  <section class="row"><button type="button" id="confirm">Bekräfta</button>
-  </section>
-  <!--/Buttons-->
+      <!--Buttons-->
+
+      <section class="row justify-content-end">
+        <button type="submit">Gå vidare</button>
+        <!--<button type="button" id="confirm">Bekräfta</button>-->
+      </section>
+      <!--/Buttons-->
+    </form>
+    <!--/ContactForm-->
+  </main>
   <!--Footer-->
   <section class="footer">
     <section id="footer-text" class="container">
@@ -125,22 +133,28 @@
         <section class="col-sm-3">
           <h5>Kontakta oss</h5>
           <ul>
-            <li> Maboram</li>
-            <li> Barkgatan 214 22 Malmö</li>
-            <li> Telefonnummer 040-420420</li>
-            <li> Mån-Fre 09:00-16:00</li>
+            <li>Maboram</li>
+            <li>Barkgatan 214 22 Malmö</li>
+            <li>040-420420</li>
+            <li>Mån-Fre 09:00-16:00</li>
           </ul>
         </section>
         <section class="col-sm-3">
           <h5>Villkor</h5>
           <ul>
-            <li><a href="http://templatelab.com/wp-content/uploads/2017/04/terms-and-conditions-template-10.jpg">Terms
-                of Service</a></li>
-            <li><a
+            <li>
+              <a href="http://templatelab.com/wp-content/uploads/2017/04/terms-and-conditions-template-10.jpg">Terms of
+                Service</a>
+            </li>
+            <li>
+              <a
                 href="https://cdn.shopify.com/s/files/1/2259/4639/products/TERMS_AND_CONDITIONS_PRIVACY_POLICY_TEMPLATE_Docs_4e978a02-70f0-46b5-9aa2-cb247027275b_1200x.jpg?v=1559181739">Terms
-                of Use</a></li>
-            <li><a href="https://thealmanac.org/g/025-bunch-ideas-for-privacy-policy-template-free-in.jpg">Privacy
-                Policy</a></li>
+                of Use</a>
+            </li>
+            <li>
+              <a href="https://thealmanac.org/g/025-bunch-ideas-for-privacy-policy-template-free-in.jpg">Privacy
+                Policy</a>
+            </li>
           </ul>
         </section>
         <section class="col-sm-3">

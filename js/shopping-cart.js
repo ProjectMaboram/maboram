@@ -36,9 +36,6 @@ cm.items.forEach(item => {
   addRow(item);
 });
 
-// Antal varor utskrivet på kundvagns-ikon
-$(".badge").text(cm.getNumberOfItems());
-
 $("#grand-total").text(gt);
 
 $(".btnDelete").on("click", function(e) {
