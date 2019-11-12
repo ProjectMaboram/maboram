@@ -1,51 +1,8 @@
-#design-page {
-  display: grid;
-    position: relative;
-    color: white;
-    min-height: 100vh;
-  }
-  
-  #design-page .content-row{
-    margin-top: 5vh;
-  }
-  
-  #design-page .instructions>p {
-    padding: 0 5%;
-  }
-  
-  #design-page .instructions>button {
-    margin: 0 5%;
-    width: 20%;
-  }
-  
-  #design-page .option>label>img {
-    width: 100%; 
-  }
-  
-  
-  #design-page .option {
-    margin: 6% 0;  
-  }
-  
-  #design-page label {  
-    height: 100px;
-    width: 100px;
-    margin: 0;
-  }
+#carousel-placer {
+  height: 70vh;
+  margin-top: 5vh;
+}
 
-  .shape {
-    color: black;
-  }
-
-  
-  .footer>p {
-    margin:0;
-  }
-
-  #carouselExampleSlidesOnly {
-    width: 100%;
-  }
-
-  .header {
-    margin-top: 10.1vh !important;
-  }
+/* .instructions {
+  margin-top: 2em;
+} */

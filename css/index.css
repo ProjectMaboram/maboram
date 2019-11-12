@@ -1,46 +1,38 @@
-body{
- 
-    min-height: 100vh;
-}
-#index-page {
-    position: relative;  
-}
-
 #index-page #content-row {
-    color: black;
-    margin-top: 3vh;
-    padding-top: 3vh;
+  color: black;
+  margin-top: 3vh;
+  padding-top: 3vh;
 }
 
-#index-page #content-row>section {
-    height: 20vh;
-    padding: 0 0 0 5%; 
-    margin-bottom: 10px;    
+#index-page #content-row > section {
+  height: 20vh;
+  padding: 0 0 0 5%;
+  margin-bottom: 10px;
 }
 
-#index-page #content-row>section>img {
-    height: 100%;
+#index-page #content-row > section > img {
+  height: 100%;
 }
 
-#index-page #content-row>section>p {
-    padding-left: 5%;
+#index-page #content-row > section > p {
+  padding-left: 5%;
 }
 h1 {
-    font-size: 25px;
+  font-size: 25px;
 }
 .col-12 {
-    justify-content: center;
+  justify-content: center;
 }
-p{
-    text-justify: center;
+p {
+  text-justify: center;
 }
 @media only screen and (max-width: 600px) {
   p {
-      justify-content: center;
+    justify-content: center;
     width: 300px;
-  height: 100px; 
-  overflow: auto;
-  text-align: center;
-  margin-left: 25px;
+    height: 100px;
+    overflow: auto;
+    text-align: center;
+    margin-left: 25px;
   }
-} 
+}
