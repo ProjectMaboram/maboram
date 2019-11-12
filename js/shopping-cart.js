@@ -52,6 +52,8 @@ $(".btnDelete").on("click", function(e) {
   let item = cm.get(pId);
   cm.removeItem(pId);
 
+  updateCartAmount();
+
   gt -= item.units * item.pricePerUnit;
   $("#grand-total").text(gt);
 });

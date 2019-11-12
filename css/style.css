@@ -1,18 +1,26 @@
 body {
   font-family: "Handlee", cursive;
-  background-image:
-  url(../img/church_sepia_tone_background.jpg);
+  background-image: url(../img/church_sepia_tone_background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  /* display: grid; */
   box-sizing: border-box;
   min-height: 100vh;
 }
 
-main{
+main {
   margin-right: 15px;
+  /* display: grid; */
 }
 
-.brand-name, h1{
+.button {
+  background: white;
+  border: 1px solid rgba(34, 33, 33, 0.699);
+}
+
+.brand-name,
+h1 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
@@ -28,7 +36,7 @@ main{
 
 .navbar {
   z-index: 100;
- background: linear-gradient(#f9f9f9, whitesmoke);
+  background: linear-gradient(#f9f9f9, whitesmoke);
   color: black;
   background-repeat: no-repeat;
 }
@@ -40,7 +48,7 @@ main{
 .header {
   position: relative;
 
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   height: 6vh;
 }
 .custom-toggler.navbar-toggler {
@@ -50,17 +58,22 @@ main{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(150,150,150)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.header>h1 {
+.header > h1 {
   text-align: center;
 }
 
-#footer-text{
-  margin-top: 40px;
+#footer-text {
+  /* margin-top: 40px; */
+  padding-top: 40px;
 }
 
 .footer {
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
   align-self: flex-end;
+}
+
+.footer ul {
+  list-style-type: none;
 }
 
 a {
@@ -73,5 +86,5 @@ a:hover,
 .a:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
-   text-shadow: 2px 2px 8px rgba(34, 33, 33, 0.699);
+  text-shadow: 2px 2px 8px rgba(34, 33, 33, 0.699);
 }
