@@ -3,6 +3,7 @@
 .carousel-container {
   position: relative;
   /* margin-left: 50px; */
+  transform: scale(0.8, 0.8);
 }
 
 .carousel-image {
@@ -86,10 +87,11 @@
 
 /* Media queries */
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 900px) {
   .carousel-container {
-    margin-left: 20vw;
-    margin-top: 20vw;
+    /* margin-left: 20vw; */
+    /* margin-top: 20vw; */
+    transform: scale(1, 1);
   }
 
   .carousel-image {
