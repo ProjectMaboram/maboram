@@ -11,6 +11,7 @@ body {
 
 main {
   margin-right: 15px;
+  min-height: 50vh;
   /* display: grid; */
 }
 

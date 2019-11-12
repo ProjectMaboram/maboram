@@ -15,7 +15,8 @@ $("#btnConfirm").on("click", function() {
     })
     $("#btnConfirm").hide()
     $("#btnBackCol").show()
-    
+    cartManager.clearCart()
+    updateCartAmount()
 })
 
 $("#btnBack").on("click", function() {
