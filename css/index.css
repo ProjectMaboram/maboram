@@ -1,10 +1,9 @@
 body{
-    display: grid;
-}
-    #index-page {
-    display: grid;
-    position: relative;
+ 
     min-height: 100vh;
+}
+#index-page {
+    position: relative;  
 }
 
 #index-page #content-row {
