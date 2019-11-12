@@ -70,6 +70,10 @@ h1 {
   align-self: flex-end;
 }
 
+.footer ul {
+  list-style-type: none;
+}
+
 a {
   color: black;
 }
