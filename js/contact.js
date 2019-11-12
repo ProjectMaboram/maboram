@@ -82,9 +82,8 @@ if (storage.has("user")) {
   loadNames();
 }
 
-const button = document.querySelector("#submit");
-
-button.addEventListener("click", () => {
+$(document).on("submit", (e) => {
+    e.preventDefault();
   const details = {
     firstname: getFirstName(),
     lastname: getLastName(),
@@ -94,5 +93,6 @@ button.addEventListener("click", () => {
     city: getCity()
   };
   storage.set("user", details);
-}); /* /Localstorage */
-// Antal varor utskrivet på kundvagns-ikon
+  window.location.href="confirm.html"
+}) /* /Localstorage */
+

@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 main > section > article > p:first-child {
   margin-top: 2vh;
 }
@@ -42,10 +38,6 @@ label img {
 select {
   margin: auto;
   width: 95% !important;
-}
-
-.header {
-  margin: 0 !important;
 }
 
 .preview {

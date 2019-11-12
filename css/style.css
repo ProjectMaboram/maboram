@@ -14,10 +14,10 @@ main{
   display: grid;
 }
 
-h1 {
+.brand-name, h1{
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 7px;
+  margin-bottom: 0;
   color: rgb(150, 117, 35);
   font-family: "Parisienne", cursive;
 }
@@ -41,14 +41,15 @@ h1 {
 
 .header {
   position: relative;
-  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);;
-  height: 8vh;
-}
 
-.header>img {
-  position: absolute;
-  left: 2vw;
-  height: 75%;
+  background: rgba(255,255,255,0.5);
+  height: 6vh;
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(150, 150, 150);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(150,150,150)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .header>h1 {
