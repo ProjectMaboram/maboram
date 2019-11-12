@@ -1,0 +1,150 @@
+/* Carousel frame */
+
+.carousel-container {
+  position: relative;
+  /* margin-left: 50px; */
+}
+
+.carousel-image {
+  margin-top: 50px;
+  width: 500px;
+  height: 500px;
+}
+
+.carousel-frame {
+  width: 500px;
+  height: 50px;
+}
+
+.carousel-btn {
+  margin-top: 20px;
+}
+
+.carousel-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.carousel-bottom {
+  position: absolute;
+  left: 0;
+  top: 550px;
+  transform: rotate(180deg);
+}
+
+.carousel-right {
+  position: absolute;
+  left: 275px;
+  top: 275px;
+  transform: rotate(90deg);
+}
+
+.carousel-left {
+  position: absolute;
+  left: -275px;
+  top: 275px;
+  transform: rotate(-90deg);
+}
+
+/* Frame corners */
+
+.carousel-corner {
+  width: 50px;
+  height: 50px;
+  /* background: red; */
+  background: url('../img/frames/frame-corner.png');
+  background-size: contain;
+}
+
+#corner-top-left {
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+
+#corner-top-right {
+  position: absolute;
+  left: 500px;
+  top: 0;
+  transform: scaleX(-1);
+}
+
+#corner-bottom-left {
+  position: absolute;
+  left: -50px;
+  top: 550px;
+  transform: scaleY(-1);
+}
+
+#corner-bottom-right {
+  position: absolute;
+  left: 500px;
+  top: 550px;
+  transform: scale(-1, -1);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 805px) {
+  .carousel-container {
+    margin-left: 20vw;
+    margin-top: 20vw;
+  }
+
+  .carousel-image {
+    margin-top: 6vw;
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .carousel-frame {
+    width: 60vw;
+    height: 6vw;
+  }
+
+  .carousel-btn {
+    /* width: 5vw;
+    height: 5vw; */
+    margin-top: 3vw;
+  }
+
+  .carousel-bottom {
+    top: 66vw;
+  }
+
+  .carousel-right {
+    left: 33vw;
+    top: 33vw;
+  }
+
+  .carousel-left {
+    left: -33vw;
+    top: 33vw;
+  }
+
+  .carousel-corner {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  #corner-top-left {
+    left: -6vw;
+    top: 0;
+  }
+
+  #corner-top-right {
+    left: 60vw;
+    top: 0;
+  }
+
+  #corner-bottom-left {
+    left: -6vw;
+    top: 66vw;
+  }
+
+  #corner-bottom-right {
+    left: 60vw;
+    top: 66vw;
+  }
+}
