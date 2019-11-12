@@ -1,16 +1,11 @@
-#about-page {
-    display: grid;
-    position: relative;
-    color: black;
-    min-height: 100vh;
-  }
+
   
-  #about-page .image>img {
+  .image>img {
     margin-top: 5vh;
-    width: 20vmax;
+    width: 16vmax;
   }
   
-  #about-page .description>p {
+  .description>p {
     margin-top: 5vh;
     padding: 0 20%;
   }
@@ -18,12 +13,8 @@
     margin:0;
   }
 
-  .header {
-    margin-top: 10.1vh !important;
-  }
-
   @media screen and (max-width: 575px) {
-    #about-page .description>p {
+    .description>p {
       padding: 0 5%;
     }
   }

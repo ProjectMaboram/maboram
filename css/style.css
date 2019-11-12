@@ -14,10 +14,10 @@ main{
   display: grid;
 }
 
-h1 {
+.brand-name, h1{
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 7px;
+  margin-bottom: 0;
   color: rgb(150, 117, 35);
   font-family: "Parisienne", cursive;
 }
