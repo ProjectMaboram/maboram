@@ -2,30 +2,23 @@
     display: none;
   }
 
-  .navbar {
-      height: 8vh;
-  }
-
-  .header {
-      background: linear-gradient(to top, whitesmoke, lightgray);
-      height: 6vh;
-  }
-
-  .header h1 {
-      padding-top: .5rem;
-  }
-
   .my-border-top {
     border-top: 1px solid black;
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
   }
 
   #response {
     margin-top: 10vh;
     display: none ;
+  }
+
+  #btnBackCol {
+    display: none;
+  }
+
+  p {
+    margin: 2px 0;
+  }
+
+  h2 {
+    font-size:400%;
   }
