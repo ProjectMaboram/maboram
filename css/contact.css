@@ -48,12 +48,7 @@ input::-webkit-inner-spin-button {
   display: grid;
   justify-content: center;
 }
-h2 {
-  margin-top: 10px;
-}
-.contact {
-	margin-top: 120px;
-}
+
 #submit {
 	margin-bottom: 10px;
 	width: 80px;
@@ -71,6 +66,11 @@ p {
 	margin-bottom: 10px;
 	height: 50px;
 }
+
+body {
+	display: grid;
+}
+
 #cancel {
 	margin-left: 50%;
 	width: 80px;
