@@ -17,7 +17,7 @@
 }
 
 .carousel-btn {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .carousel-top {
@@ -53,7 +53,7 @@
   width: 50px;
   height: 50px;
   /* background: red; */
-  background: url('../img/frames/frame-corner.png');
+  background: url("../img/frames/frame-corner.png");
   background-size: contain;
 }
 

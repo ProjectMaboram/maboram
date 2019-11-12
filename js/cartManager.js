@@ -62,6 +62,11 @@ class CartManager {
     // cm.items.findIndex(item => item.units == 6)
   }
 
+  clearCart() {
+    this.storage.delete("cartItems");
+    this.storage.delete("uniqueId");
+  }
+
   getNumberOfItems() {
     this.update();
     return this.items.length;
