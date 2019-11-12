@@ -32,6 +32,7 @@
     <script defer src="../js/cartManager.js"></script>
     <script defer src="../js/index.js"></script>
     <script defer src="../js/shopping-cart.js"></script>
+    <script defer src="../js/confirm.js"></script>
 </head>
 
 <body>
@@ -83,24 +84,26 @@
 
     
 
+    <!-- HEADER -->
         <section class="container-fluid" id="container">
-            <!-- HEADER -->
             <section class="row">
                 <section class="header col-12 d-flex justify-content-center align-items-center">
                     <h1>Konfirmera ditt köp</h1>
                 </section>
             </section>
+        </section>
             <!-- /HEADER -->
 
-            <section class="row" id="main">
-                <section class="col-12 col-sm-6 d-flex flex-column align-items-center" id="adress">
-                    <p>Malmö</p>
-                    <p>Malmöson</p>
-                    <p>Malmögatan 69</p>
-                    <p>696969</p>
-                    <p>Malmö</p>
+        <section class="container">
+            <section class="row">
+                <section class="col-12 col-sm-6" id="details">
+                    <p id="given-name"></p>
+                    <p id="last-name"></p>
+                    <p id="adress"></p>
+                    <p id="zip"></p>
+                    <p id="city"></p>
                 </section>
-                <section class="container col-12 col-sm-6" id="cart">
+                <section class="col-12 col-sm-6" id="cart">
                     <section id="cart-items"></section>
                     <section class="row">
                         <section class="col-12 text-right">
@@ -108,11 +111,14 @@
                         </section>
                     </section>
                 </section>
+                <section class="col-12" id="response">
+                    <p>Thank you for shopping at Maboram!</p>
+                </section>
                 <section class="col-12 text-right">
-                    <button type="button">Slutför köp</button>
+                    <button id="btnConfirm" type="button">Slutför köp</button>
                 </section>
             </section>
-        </section>
+        </section>  
 
         <!-- Here is the template placeholder. Is used to get a fully populated cart item -->
         <section class="row" id="cart-template">
