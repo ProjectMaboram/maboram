@@ -4,14 +4,12 @@ body {
   url(../img/church_sepia_tone_background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  display: grid;
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main{
   margin-right: 15px;
-  display: grid;
 }
 
 .brand-name, h1{
@@ -61,7 +59,6 @@ main{
 }
 
 .footer {
-
   background: linear-gradient(to bottom right, whitesmoke, rgb(92, 86, 86));
   align-self: flex-end;
 }

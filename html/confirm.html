@@ -36,56 +36,49 @@
 </head>
 
 <body>
-
-    <section id="confirm-page">
-
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-light sticky-top navbar-expand-lg">
-            <a class="Logo" href="index.html"> <img class="logo" src="../img/Logo.png" /></a>
-            <h1>Maboram</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <section class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Hemsida <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Våra produkter</a>
-                        <section class="dropdown-menu">
-                            <a class="dropdown-item" href="subscription.html">Prenumeration</a>
-                            <a class="dropdown-item" href="design.html">Designa din egen ram</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Hjälp mig</a>
-                        </section>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Om oss</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                    You're framed!
-                </span>
-            </section>
-            <a href="shopping-cart.html" class="btn btn-info btn-lg">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-                <i class="fas fa-shopping-cart">
-                    <span class="badge"></span>
-                </i>
-            </a>
+        <nav class="navbar sticky-top navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="../img/Logo.png" />
+                    <span class="brand-name">Maboram</span>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Våra produkter</a>
+                            <section class="dropdown-menu">
+                                <a class="dropdown-item" href="subscription.html">Prenumeration</a>
+                                <a class="dropdown-item" href="design.html">Designa din egen ram</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://google.com" target="_blank">Hjälp mig</a>
+                            </section>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Om oss</a>
+                        </li>
+                    </ul>
+                    <span id="slogan" class="navbar-text">
+                        You're framed!
+                    </span>
+                </section>
+                <a href="shopping-cart.html" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    <i class="fas fa-shopping-cart">
+                        <span class="badge"></span>
+                    </i>
+                </a>
         </nav>
-
-        <!-- /NAVBAR -->
-
-
+    
+            <!-- /NAVBAR -->    
 
         <!-- HEADER -->
-        <section class="container-fluid" id="container">
+        <section class="container-fluid">
             <section class="row">
                 <section class="header col-12 d-flex justify-content-center align-items-center">
                     <h1>Konfirmera ditt köp</h1>
@@ -94,14 +87,15 @@
         </section>
         <!-- /HEADER -->
 
-        <section class="container">
+        <main class="container">
             <section class="row">
                 <section class="col-12 col-sm-6" id="details">
-                    <p id="given-name"></p>
-                    <p id="last-name"></p>
-                    <p id="adress"></p>
-                    <p id="zip"></p>
-                    <p id="city"></p>
+                    <p><span><strong>Förnamn:&nbsp;</strong></span><span id="given-name"></span></p>
+                    <p><span><strong>Efternamn:&nbsp;</strong></span><span id="last-name"></span></p>
+                    <p><span><strong>Adress:&nbsp;</strong></span><span id="adress"></span></p>
+                    <p><span><strong>C/o:&nbsp;</strong></span><span id="co"></span></p>
+                    <p><span><strong>Postnr:&nbsp;</strong></span><span id="zip"></span></p>
+                    <p><span><strong>Stad:&nbsp;</strong></span><span id="city"></span></p>
                 </section>
                 <section class="col-12 col-sm-6" id="cart">
                     <section id="cart-items"></section>
@@ -112,13 +106,16 @@
                     </section>
                 </section>
                 <section class="col-12" id="response">
-                    <p>Thank you for shopping at Maboram!</p>
+                    <h2>Tack för dina pengar!</h2>
                 </section>
                 <section class="col-12 text-right">
                     <button id="btnConfirm" type="button">Slutför köp</button>
                 </section>
+                <section class="col-12 text-right" id="btnBackCol">
+                    <button id="btnBack" type="button">Hem</button>
+                </section>
             </section>
-        </section>
+        </main>
 
         <!-- Here is the template placeholder. Is used to get a fully populated cart item -->
         <section class="row" id="cart-template">
@@ -137,6 +134,7 @@
             </section>
         </section>
         <!-- End of template -->
+
 
         <!-- FOOTER -->
 
@@ -187,8 +185,6 @@
         </section>
 
         <!-- /FOOTER -->
-
-    </section>
 </body>
 
 </html>
