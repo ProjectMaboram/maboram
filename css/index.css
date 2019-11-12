@@ -6,7 +6,7 @@
 
 #index-page #content-row > section {
   height: 20vh;
-  padding: 0 0 0 5%;
+  
   margin-bottom: 10px;
 }
 
@@ -26,6 +26,7 @@ h1 {
 p {
   text-justify: center;
 }
+
 @media only screen and (max-width: 600px) {
   p {
     justify-content: center;
