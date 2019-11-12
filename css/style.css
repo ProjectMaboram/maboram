@@ -2,15 +2,16 @@ body {
   font-family: "Handlee", cursive;
   background-image: url(../img/church_sepia_tone_background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: grid;
+  background-size: cover;
+  background-position: center;
+  /* display: grid; */
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main {
   margin-right: 15px;
-  display: grid;
+  /* display: grid; */
 }
 
 .button {
@@ -62,7 +63,8 @@ h1 {
 }
 
 #footer-text {
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  padding-top: 40px;
 }
 
 .footer {
