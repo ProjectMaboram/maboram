@@ -128,24 +128,27 @@
 
     <main class="container">
       <section class="row">
-        <article>
-          <p>
-            Prenumerera på våra fina ramar! Välj ett av våra tre kosmopolitiska
-            teman: <strong>New York</strong>, <strong>Paris</strong> eller
-            <strong>Stockholm</strong>
-          </p>
-          <p>
-            Varje tema innehåller ramar i fyra olika färger. Tack våre vårt
-            unika system <em>Clip & Go&copy;</em> kan du när du har fått alla
-            delar kan du själv sätta ihop en unik ramkonstellation på bara ett
-            par sekunder.
-          </p>
-        </article>
+        <section class="col-8 offset-2">
+          <article>
+            <p>
+              Prenumerera på våra fina ramar! Välj ett av våra tre
+              kosmopolitiska teman: <strong>New York</strong>,
+              <strong>Paris</strong> eller
+              <strong>Stockholm</strong>
+            </p>
+            <p>
+              Varje tema innehåller ramar i fyra olika färger. Tack våre vårt
+              unika system <em>Clip & Go&copy;</em> kan du när du har fått alla
+              delar kan du själv sätta ihop en unik ramkonstellation på bara ett
+              par sekunder.
+            </p>
+          </article>
+        </section>
       </section>
       <form id="frmPren">
         <section class="form-row">
           <!-- The first column first row, select theme, starts here  -->
-          <section class="col-12 col-sm-6">
+          <section class="col-12 col-sm-6 offset-md-2">
             <fieldset class="form-group" id="optionThemes">
               <legend>Välj ditt tema</legend>
               <section class="form-row justify-content-center flex-nowrap">
@@ -207,7 +210,7 @@
           <!-- The first column first row, select theme, ends here  -->
 
           <!-- The second column first row, select interval, starts here  -->
-          <section class="col-12 col-sm-2">
+          <section class="col-12 col-sm-2 ">
             <fieldset class="form-group">
               <legend>Intervall</legend>
               <select id="intervall" class="form-control" required>
@@ -223,7 +226,7 @@
 
         <section class="form-row">
           <!-- The first column second row, select frame shape, starts here  -->
-          <section class="col-12 col-sm-6">
+          <section class="col-12 col-sm-6 offset-md-2">
             <fieldset class="form-group" id="optionShapes">
               <legend>Välj form på ramen</legend>
               <section class="form-row justify-content-center flex-nowrap">
@@ -291,7 +294,7 @@
                     id="lblFirstMeasurement"
                     for="txtFirstMeasurement"
                     class="col col-form-label"
-                    >Bredd:
+                    >Bredd (mm):
                   </label>
                   <section class="col textfieldcol">
                     <input
@@ -304,7 +307,7 @@
                 </section>
                 <section class="form-row" id="secondMeasure">
                   <label for="txtSecondMeasurement" class="col col-form-label"
-                    >Höjd:
+                    >Höjd (mm):
                   </label>
                   <section class="col textfieldcol">
                     <input
@@ -322,7 +325,7 @@
         </section>
 
         <section class="form-row justify-content-end">
-          <button type="submit" id="next">Nästa!</button>
+          <button type="submit" id="next" class="btn button">Nästa!</button>
         </section>
       </form>
 
