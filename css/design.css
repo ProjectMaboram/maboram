@@ -1,6 +1,6 @@
 #carousel-placer {
   height: 70vh;
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 
 /* .instructions {
@@ -8,4 +8,7 @@
 } */
 
 @media screen and (max-width: 900px) {
+  #carousel-placer {
+    height: 30vh;
+  }
 }
