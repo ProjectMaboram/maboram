@@ -86,6 +86,7 @@ a {
 a:hover,
 .a:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+  /*transform: translateY(-0.25em);*/
   text-shadow: 2px 2px 8px rgba(34, 33, 33, 0.699);
 }
+
