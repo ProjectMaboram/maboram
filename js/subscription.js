@@ -15,7 +15,7 @@ $(document).on("click", "#optionShapes input[type=radio]", e => {
 
   switch (event.target.id) {
     case "rectangle":
-      sLbl = "Bredd:";
+      sLbl = "Bredd (mm):";
       sImg = "frameSquareTrans.png";
       $("#secondMeasure").show();
       $("#txtSecondMeasurement").prop("required", true);
@@ -23,14 +23,14 @@ $(document).on("click", "#optionShapes input[type=radio]", e => {
       break;
 
     case "circle":
-      sLbl = "Radie:";
+      sLbl = "Radie (mm):";
       sImg = "frameRoundTrans.png";
       $("#secondMeasure").hide();
       $("#txtSecondMeasurement").prop("required", false);
       break;
 
     case "triangle":
-      sLbl = "Sida:";
+      sLbl = "Sida (mm):";
       sImg = "frameTriangleTrans.png";
 
       $("#secondMeasure").hide();
@@ -65,16 +65,17 @@ $(document).on("submit", "#frmPren", e => {
       sMsr =
         "B:" +
         $("#txtFirstMeasurement").val() +
-        ",H:" +
-        $("#txtSecondMeasurement").val();
+        "mm ,H:" +
+        $("#txtSecondMeasurement").val() +
+        "mm";
       break;
 
     case "circle":
-      sMsr = "R:" + $("#txtFirstMeasurement").val();
+      sMsr = "R:" + $("#txtFirstMeasurement").val() + "mm";
       break;
 
     case "triangle":
-      sMsr = "S:" + $("#txtFirstMeasurement").val();
+      sMsr = "S:" + $("#txtFirstMeasurement").val() + "mm";
       break;
   }
 
